@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anytraq/anytraq/!svn/ver/1686/trunk/Services/Netty/src/main/resources/spring
+END
+netty-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anytraq/anytraq/!svn/ver/4102/trunk/Services/Netty/src/main/resources/spring/netty-beans.xml
+END
+restful-module-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/anytraq/anytraq/!svn/ver/4110/trunk/Services/Netty/src/main/resources/spring/restful-module-beans.xml
+END
+picolo-module-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/anytraq/anytraq/!svn/ver/4111/trunk/Services/Netty/src/main/resources/spring/picolo-module-beans.xml
+END

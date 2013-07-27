@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/anytraq/anytraq/!svn/ver/960/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/netty
+END
+WLIUSMessageRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/680/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/netty/WLIUSMessageRequest.java
+END
+DeviceMessageRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/960/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/netty/DeviceMessageRequest.java
+END

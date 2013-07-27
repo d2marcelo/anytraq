@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anytraq/anytraq/!svn/ver/3358/trunk/Shared/Utils/src/main/java/com/anet/api
+END
+ARBPaymentSchedule.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/anytraq/anytraq/!svn/ver/3310/trunk/Shared/Utils/src/main/java/com/anet/api/ARBPaymentSchedule.java
+END
+ARBOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/anytraq/anytraq/!svn/ver/3289/trunk/Shared/Utils/src/main/java/com/anet/api/ARBOrder.java
+END
+ARBPayment.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/anytraq/anytraq/!svn/ver/3289/trunk/Shared/Utils/src/main/java/com/anet/api/ARBPayment.java
+END
+CreditCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/anytraq/anytraq/!svn/ver/3308/trunk/Shared/Utils/src/main/java/com/anet/api/CreditCard.java
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/anytraq/anytraq/!svn/ver/3289/trunk/Shared/Utils/src/main/java/com/anet/api/Message.java
+END
+ARBCustomer.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anytraq/anytraq/!svn/ver/3289/trunk/Shared/Utils/src/main/java/com/anet/api/ARBCustomer.java
+END
+ARBDriversLicense.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/anytraq/anytraq/!svn/ver/3309/trunk/Shared/Utils/src/main/java/com/anet/api/ARBDriversLicense.java
+END
+BankAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anytraq/anytraq/!svn/ver/3289/trunk/Shared/Utils/src/main/java/com/anet/api/BankAccount.java
+END
+ARBSubscription.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/anytraq/anytraq/!svn/ver/3291/trunk/Shared/Utils/src/main/java/com/anet/api/ARBSubscription.java
+END
+ARBAPIRequests.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/anytraq/anytraq/!svn/ver/3357/trunk/Shared/Utils/src/main/java/com/anet/api/ARBAPIRequests.java
+END
+ARBAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anytraq/anytraq/!svn/ver/3358/trunk/Shared/Utils/src/main/java/com/anet/api/ARBAPI.java
+END
+ARBNameAndAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/anytraq/anytraq/!svn/ver/3289/trunk/Shared/Utils/src/main/java/com/anet/api/ARBNameAndAddress.java
+END

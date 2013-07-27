@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/2316/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application
+END
+JBusTripAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/anytraq/anytraq/!svn/ver/3322/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/JBusTripAction.java
+END
+MessageActionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/anytraq/anytraq/!svn/ver/778/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/MessageActionException.java
+END
+TrackingPayloadFields.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/anytraq/anytraq/!svn/ver/3734/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/TrackingPayloadFields.java
+END
+IOServiceConfirmAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/anytraq/anytraq/!svn/ver/3074/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/IOServiceConfirmAction.java
+END
+MessageAuditLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/anytraq/anytraq/!svn/ver/4153/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/MessageAuditLogger.java
+END
+EnforaUnitStatusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/anytraq/anytraq/!svn/ver/4085/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/EnforaUnitStatusAction.java
+END
+ActionHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/anytraq/anytraq/!svn/ver/4014/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/ActionHelper.java
+END
+ActionName.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/anytraq/anytraq/!svn/ver/4085/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/ActionName.java
+END
+IOServiceTripAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/anytraq/anytraq/!svn/ver/3645/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/IOServiceTripAction.java
+END
+GpsTripAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/anytraq/anytraq/!svn/ver/3625/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/GpsTripAction.java
+END
+TeltonikaTripAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/anytraq/anytraq/!svn/ver/2651/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/TeltonikaTripAction.java
+END
+XirgoUnitStatusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/anytraq/anytraq/!svn/ver/4163/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/XirgoUnitStatusAction.java
+END
+GpsUnitStatusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/anytraq/anytraq/!svn/ver/3644/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/GpsUnitStatusAction.java
+END
+TeltonikaUnitStatusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/anytraq/anytraq/!svn/ver/2869/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/TeltonikaUnitStatusAction.java
+END
+ActionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/application/ActionUtils.java
+END

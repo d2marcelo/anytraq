@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anytraq/anytraq/!svn/ver/2207/trunk/Services/Controller/src/main/resources/spring
+END
+ApplicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/anytraq/anytraq/!svn/ver/1881/trunk/Services/Controller/src/main/resources/spring/ApplicationContext.xml
+END
+ApplicationContext-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/anytraq/anytraq/!svn/ver/2207/trunk/Services/Controller/src/main/resources/spring/ApplicationContext-dao.xml
+END
+ApplicationContext-data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/anytraq/anytraq/!svn/ver/1881/trunk/Services/Controller/src/main/resources/spring/ApplicationContext-data.xml
+END

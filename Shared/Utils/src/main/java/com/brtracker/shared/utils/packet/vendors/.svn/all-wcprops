@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/anytraq/anytraq/!svn/ver/4152/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/vendors
+END
+DefaultXirgoEventReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/anytraq/anytraq/!svn/ver/4286/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/vendors/DefaultXirgoEventReader.java
+END
+XirgoConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/4089/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/vendors/XirgoConstants.java
+END
+EnforaConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/vendors/EnforaConstants.java
+END
+XirgoPacketReaderController.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/vendors/XirgoPacketReaderController.java
+END
+XirgoUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/4128/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/vendors/XirgoUtils.java
+END
+XirgoEventReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/vendors/XirgoEventReader.java
+END

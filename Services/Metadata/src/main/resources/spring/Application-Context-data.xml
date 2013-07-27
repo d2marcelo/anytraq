@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "jar:spring-2.0.6.jar:org/springframework/beans/factory/xml/spring-beans.dtd">
+
+<beans>
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+	      	<ref bean="sessionFactory"/>
+		</property>
+		<property name="globalRollbackOnParticipationFailure" value="false"/>
+    </bean>
+   
+	<bean id="CatsControllerDAO"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		lazy-init="true" singleton="true">
+		<property name="transactionManager" ref="transactionManager" /> 
+		
+		<property name="target">
+			<ref local="CatsControllerDAOTarget" />
+		</property>
+		 
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_SUPPORTS</prop>
+			</props>
+		</property>
+	 	
+	</bean>
+	
+	<bean id="CatsControllerDAOTarget"
+		class="com.palm.ws.cats.controller.data.impl.CatsControllerDAOImpl"
+		autowire="byType" lazy-init="true" singleton="true">
+	</bean>
+	
+    
+ </beans>

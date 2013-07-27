@@ -1,0 +1,102 @@
+{
+    "schema_ns": "tracking.enfora.mt3000",
+    "shema_port_mapping": "8001",
+
+    "message_root": {
+        "message_name": "EnforaMT3000Message",
+        "skip_data": {
+            "type": "binary_int",
+            "length": "4"
+        },
+        "param1": {
+            "type": "selector2",
+            "key_type": "binary_int",
+            "key_length": "4",
+            "mapping": {
+                "2100": "payloadType1",
+                "2500": "payloadType1",
+                "9910": "payloadType1",
+				"1000": "payloadType1",
+				"1100": "payloadType1",
+				"1110": "payloadType1",
+				"2110": "payloadType1",
+				"9900": "payloadType1",
+				"0100": "payloadType1"                
+            }
+        }
+    },
+    "payloadType1": {
+        "mdmid": {
+            "type": "string",
+            "length": "22",
+            "property": "mdmid"
+        },
+        "gpiostatus": {
+            "type": "binary_int",
+            "length": "2",
+            "property": "gpiostatus"
+        },
+        "inputEventNumber": {
+            "type": "binary_int",
+            "length": "1",
+            "property": "inputEventNumber"
+        },
+
+        "gpsDate": {
+            "type": "binary_int",
+            "length": "3",
+            "property": "gpsDate"
+        },
+        "gpsStatus": {
+            "type": "binary_int",
+            "length": "1",
+            "property": "gpsStatus"
+        },
+        "gpsLat": {
+            "type": "nmea_lat",
+            "property": "gpsLat"
+        },
+        "gpsLng": {
+            "type": "nmea_lng",
+            "property": "gpsLng"
+        },
+        "gpsSpeed": {
+            "type": "binary_float",
+            "length": "2",
+            "property": "gpsSpeed",
+            "multiply":"0.1852"
+        },
+        "gpsHeading": {
+            "type": "binary_float",
+            "length": "2",
+            "property": "gpsHeading",
+            "multiply":"0.1"
+        },
+        "gpsTime": {
+            "type": "binary_int",
+            "length": "3",
+            "property": "gpsTime"
+        },
+        "gpsAlt": {
+            "type": "binary_int",
+            "length": "3",
+            "property": "gpsAlt"
+        },
+        "gpsNumSat": {
+            "type": "binary_int",
+            "length": "1",
+            "property": "gpsNumSat"
+        },
+        "gpsOdo": {
+            "type": "binary_int",
+            "length": "4",
+            "property": "gpsOdo"
+        },
+
+        "rtc": {
+            "type": "binary_int",
+            "length": "6",
+            "property": "rtc"
+        }
+    }
+}

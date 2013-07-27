@@ -1,0 +1,21 @@
+{
+    "schema_ns" : "tracking.common",
+
+    "unit_identifier_propery":"presentationMessage.unitId",
+    
+    "preprocessor" : "default_packet_preprocessor",
+    
+    "message_root" : {
+        "header": {
+            "type": "keyed_field_set",
+            "optional":"true",
+            "field_delim": "0",
+            "field_key": {"type":"string", "max_length":"3"},
+            "fields":{
+                "h01" : {"type":"string", "property":"port"},
+                "h02" : {"type":"string", "property":"unitId"},
+                "h03" : {"type":"string", "property":"messageDate"}
+            }
+        }
+    }
+}

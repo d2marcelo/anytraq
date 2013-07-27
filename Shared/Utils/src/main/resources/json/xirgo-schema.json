@@ -1,0 +1,20 @@
+{
+    "schema_ns": "tracking.xirgo.xt2000.gx001",
+
+    "shema_port_mapping": "9001",
+
+    "message_root": {
+        "message_name": "XirgoGX001Message",
+		"tokenized_field_set": {
+			"token":",",
+			"fields": {
+				"unitid": {
+		            "type": "string"
+		        },
+				"eventNum": {
+		            "type": "int"
+		        }
+		    }			
+		}
+	}
+}

@@ -1,0 +1,141 @@
+package com.brtracker.services.midlink;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+import org.springframework.orm.hibernate3.LocalSessionFactoryBean;
+import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
+
+import com.brtracker.services.midlink.processing.PacketDispatcher;
+import com.brtracker.services.midlink.processing.WsClient;
+import com.brtracker.services.midlink.processing.application.GpsTripAction;
+import com.brtracker.services.midlink.processing.application.GpsUnitStatusAction;
+import com.brtracker.services.midlink.processing.application.IOServiceTripAction;
+import com.brtracker.services.midlink.processing.application.JBusTripAction;
+import com.brtracker.shared.payload.tracking.DeviceMessageAttribute;
+import com.brtracker.shared.utils.json.JSONMapper;
+import com.brtracker.shared.utils.packet.EnforaFixtures;
+import com.brtracker.shared.utils.packet.PacketFixture;
+import com.brtracker.shared.utils.packet.XirgoFixtures;
+import com.brtracker.shared.utils.packet.teltonika.TeltonikaFixture;
+import com.brtracker.shared.utils.wsutils.ServiceResponse;
+
+@SuppressWarnings("unused")
+public class DispatcherTest extends
+		AbstractDependencyInjectionSpringContextTests {
+	
+	private PacketDispatcher dispatcher;
+	private GpsUnitStatusAction gpsUnitStatusAction;
+	private GpsTripAction gpsTripAction;
+	private JBusTripAction jBusTripAction;
+	private IOServiceTripAction ioServiceTripAction;
+	
+	protected PacketFixture packetFixture = new PacketFixture();
+	
+	public void testDispatcher() {
+		
+//		short[] packet = packetFixture.getEnforaKeepAlivePacket();
+//		short[] packet = EnforaFixtures.getEnforaPeriodicIgnitionOn4();
+		short[] packet = XirgoFixtures.getPeriodOn2();
+//		short[] packet = (new TeltonikaFixture()).getTeltonikaPacketWithFakeFuel(); 
+			//packetFixture.getIOServicePacket();
+		dispatcher.dispatchPacket(packet);
+		System.out.println("waiting ");
+//		try {
+//			List<short[]> packets = loadPackets("/Users/fordaz/Development/Data/Brtrack/message-examples-5292011.txt");
+//			int l = packets.size();
+//			for (int i=0; i<l; i++) {
+//				dispatcher.dispatchPacket(packets.get(i));
+//			}
+//			System.out.println("waiting ");
+//
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+	}
+
+	private List<short[]> loadPackets(String fileName) throws Exception {
+		
+		List<short[]> packets = new ArrayList<short[]>();
+		
+		BufferedReader in = null;
+		try {
+		    in = new BufferedReader(new FileReader(fileName));
+		    String line = "";
+		    while ((line = in.readLine()) != null) {
+		    	if (line.trim().length() == 0) {
+		    		continue;
+		    	}
+		    	int colonPos = line.indexOf(':');
+		    	if (colonPos != -1) {
+		    		line = line.substring(colonPos+1).trim();
+		    	}
+		    	short[] packet = new short[1500];
+		    	int packetIndx = 0;
+		    	StringTokenizer st = new StringTokenizer(line, " ");
+		    	while (st.hasMoreTokens()) {
+		    		String shortValue = st.nextToken();
+		    		packet[packetIndx++] = Short.valueOf(shortValue, 16);
+		    	}
+		    	packets.add(packet);
+		    }
+		} finally {
+			if (in != null) {
+				in.close();
+			}
+		}
+		
+		return packets;
+
+	}
+	
+	protected String[] getConfigLocations() {
+        return new String[] { "classpath:spring/midlink-test-beans.xml" };
+    }
+
+	@Override
+	protected void onSetUp() throws Exception {
+		super.onSetUp();
+		WsClient wsClient = new WsClient() {
+			@Override
+			public ServiceResponse postRequest(Object message, String endpoint)
+					throws Exception {
+				if (message instanceof DeviceMessageAttribute) {
+					DeviceMessageAttribute dma = (DeviceMessageAttribute) message;
+					System.out.println("request payload " + JSONMapper.toString(dma.getAttributes()));
+				}
+				System.out.println("Succesful response");
+				ServiceResponse response = new ServiceResponse();
+				response.setReturnValue(true);
+				return response;
+			}};
+		gpsUnitStatusAction.setWsClient(wsClient);
+		gpsTripAction.setWsClient(wsClient);	
+		jBusTripAction.setWsClient(wsClient);
+		ioServiceTripAction.setWsClient(wsClient);
+	}
+
+	public void setDispatcher(PacketDispatcher dispatcher) {
+		this.dispatcher = dispatcher;
+	}
+
+	public void setGpsUnitStatusAction(GpsUnitStatusAction gpsUnitStatusAction) {
+		this.gpsUnitStatusAction = gpsUnitStatusAction;
+	}
+
+	public void setGpsTripAction(GpsTripAction gpsTripAction) {
+		this.gpsTripAction = gpsTripAction;
+	}
+
+	public void setjBusTripAction(JBusTripAction jBusTripAction) {
+		this.jBusTripAction = jBusTripAction;
+	}
+
+	public void setIoServiceTripAction(IOServiceTripAction ioServiceTripAction) {
+		this.ioServiceTripAction = ioServiceTripAction;
+	}
+
+}

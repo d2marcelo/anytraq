@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anytraq/anytraq/!svn/ver/2316/trunk/Services/Midlink/src/test/resources/spring
+END
+midlink-test-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/anytraq/anytraq/!svn/ver/3942/trunk/Services/Midlink/src/test/resources/spring/midlink-test-dao.xml
+END
+midlink-test-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/test/resources/spring/midlink-test-beans.xml
+END
+midlink-test-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/anytraq/anytraq/!svn/ver/4013/trunk/Services/Midlink/src/test/resources/spring/midlink-test-datasource.xml
+END

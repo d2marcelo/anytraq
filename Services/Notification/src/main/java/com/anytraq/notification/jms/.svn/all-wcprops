@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/anytraq/anytraq/!svn/ver/2069/trunk/Services/Notification/src/main/java/com/anytraq/notification/jms
+END
+SystemBootstrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/3159/trunk/Services/Notification/src/main/java/com/anytraq/notification/jms/SystemBootstrapper.java
+END
+NotificationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/java/com/anytraq/notification/jms/NotificationListener.java
+END

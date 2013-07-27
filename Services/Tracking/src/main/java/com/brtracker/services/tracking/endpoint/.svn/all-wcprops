@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/anytraq/anytraq/!svn/ver/2309/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint
+END
+VehicleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/884/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint/VehicleService.java
+END
+DeviceHistoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/anytraq/anytraq/!svn/ver/2309/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint/DeviceHistoryService.java
+END
+DeviceMessageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/anytraq/anytraq/!svn/ver/1350/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint/DeviceMessageService.java
+END
+DriverBehaviorService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/anytraq/anytraq/!svn/ver/1293/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint/DriverBehaviorService.java
+END
+GraphDataService.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/1350/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint/GraphDataService.java
+END
+AlertMessageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/anytraq/anytraq/!svn/ver/1725/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint/AlertMessageService.java
+END
+Start.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/1232/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/endpoint/Start.java
+END

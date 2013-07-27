@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use
+END
+LookupDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use/LookupDAOImpl.html
+END
+ReportingDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use/ReportingDAOImpl.html
+END
+LookupDAOCriteria.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use/LookupDAOCriteria.html
+END
+ResultDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use/ResultDAOImpl.html
+END
+AbstractReportDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use/AbstractReportDAOImpl.html
+END
+ResultDAOCriteria.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use/ResultDAOCriteria.html
+END
+AbstractResultDAOCriteria.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/class-use/AbstractResultDAOCriteria.html
+END

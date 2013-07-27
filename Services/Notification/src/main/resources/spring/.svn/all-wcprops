@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anytraq/anytraq/!svn/ver/2076/trunk/Services/Notification/src/main/resources/spring
+END
+notification-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/anytraq/anytraq/!svn/ver/3789/trunk/Services/Notification/src/main/resources/spring/notification-dao.xml
+END
+notification-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/anytraq/anytraq/!svn/ver/3159/trunk/Services/Notification/src/main/resources/spring/notification-beans.xml
+END
+notification-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/anytraq/anytraq/!svn/ver/2076/trunk/Services/Notification/src/main/resources/spring/notification-datasource.xml
+END

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="defaultDeviceProtocolHandler" 
+		class="com.brtracker.services.netty.server.DefaultProtocolHandler"/>
+
+	<bean id="teltonikaProtocolHandler" class="com.brtracker.services.netty.server.TeltonikaProtocolHandler">
+		<property name="packetReader" ref="packetReader"/>
+	</bean>
+	
+
+	<bean id="messageEventProcessor" class="com.brtracker.services.netty.server.PicoloEventProcessor">
+		<property name="packetReader" ref="packetReader"/>
+		<property name="packetWriter" ref="packetWriter"/>
+		<property name="deviceConnectionLookup" ref="deviceConnectionLookup"/>
+		<property name="jmsSender" ref="jmsSender"/>
+		<property name="deviceProtocolHandlers">
+			<map>
+				<entry key="3001" value-ref="defaultDeviceProtocolHandler"/>
+				<entry key="3002" value-ref="teltonikaProtocolHandler"/>
+				<entry key="8000" value-ref="nagiosProtocolHandler"/>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="echoMessageEventProcessor" class="com.brtracker.services.netty.server.EchoMessageEventProcessor"/>
+	
+	<bean id="picoloNettyModule" class="com.brtracker.services.netty.server.PicoloNettyModule">
+		<property name="port" value="3001"/>
+		<property name="eventProcessor" ref="messageEventProcessor"/>
+	</bean>
+
+	<bean id="teltonikaNettyModule" class="com.brtracker.services.netty.server.PicoloNettyModule">
+		<property name="port" value="3002"/>
+		<property name="eventProcessor" ref="messageEventProcessor"/>
+	</bean>
+	
+	<bean id="enforaNettyModule" class="com.brtracker.services.netty.server.EnforaNettyModule">
+		<property name="port" value="8001"/>
+		<property name="eventProcessor" ref="echoMessageEventProcessor"/>
+		<property name="packetReader" ref="packetReader"/>
+		<property name="packetWriter" ref="packetWriter"/>
+		<property name="jmsSender" ref="jmsSender"/>
+	</bean>
+
+	<bean id="xirgoNettyModule" class="com.brtracker.services.netty.server.XirgoNettyModule">
+		<property name="port" value="8084"/>
+		<property name="eventProcessor" ref="echoMessageEventProcessor"/>
+		<property name="packetReader" ref="packetReader"/>
+		<property name="packetWriter" ref="packetWriter"/>
+		<property name="jmsSender" ref="jmsSender"/>
+	</bean>
+
+	<bean id="nagiosMonitorModule" class="com.brtracker.services.netty.server.NagiosMonitorModule">
+		<property name="port" value="8000"/>
+		<property name="eventProcessor" ref="messageEventProcessor"/>
+	</bean>
+	
+	<bean id="nagiosProtocolHandler" class="com.brtracker.services.netty.server.NagiosProtocolHandler">
+		<property name="packetReader" ref="packetReader"/>
+	</bean>
+	
+ </beans>

@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/anytraq/anytraq/!svn/ver/4228/trunk/Services/Async/src/main/java/com/brtracker/services/async
+END
+AsyncMidlinkMessageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/4155/trunk/Services/Async/src/main/java/com/brtracker/services/async/AsyncMidlinkMessageListener.java
+END
+MqClientFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/3608/trunk/Services/Async/src/main/java/com/brtracker/services/async/MqClientFactory.java
+END
+AccountWSClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/4209/trunk/Services/Async/src/main/java/com/brtracker/services/async/AccountWSClient.java
+END
+UpdateDeviceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/anytraq/anytraq/!svn/ver/3664/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateDeviceStatus.java
+END
+TripSummaryCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/2729/trunk/Services/Async/src/main/java/com/brtracker/services/async/TripSummaryCalculator.java
+END
+AsyncAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/anytraq/anytraq/!svn/ver/4115/trunk/Services/Async/src/main/java/com/brtracker/services/async/AsyncAction.java
+END
+AsyncAuditMessageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/4147/trunk/Services/Async/src/main/java/com/brtracker/services/async/AsyncAuditMessageListener.java
+END
+UpdateDeviceIdleTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/3647/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateDeviceIdleTime.java
+END
+UpdateDistanceGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/4113/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateDistanceGraph.java
+END
+UpdateVehicleFuelGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/3647/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateVehicleFuelGraph.java
+END
+AsyncMessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/4155/trunk/Services/Async/src/main/java/com/brtracker/services/async/AsyncMessageHandler.java
+END
+RegionalSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/anytraq/anytraq/!svn/ver/3904/trunk/Services/Async/src/main/java/com/brtracker/services/async/RegionalSettings.java
+END
+RegionalSettingsHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/3904/trunk/Services/Async/src/main/java/com/brtracker/services/async/RegionalSettingsHelper.java
+END
+UpdateDeviceHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/3960/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateDeviceHistory.java
+END
+UpdateVehicleSpeedGraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/3664/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateVehicleSpeedGraph.java
+END
+MyThreadPoolExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/3121/trunk/Services/Async/src/main/java/com/brtracker/services/async/MyThreadPoolExecutor.java
+END
+UpdateDeviceState.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/4228/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateDeviceState.java
+END
+AsyncAccountMessageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/3659/trunk/Services/Async/src/main/java/com/brtracker/services/async/AsyncAccountMessageListener.java
+END
+DefaultMqCient.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/anytraq/anytraq/!svn/ver/3608/trunk/Services/Async/src/main/java/com/brtracker/services/async/DefaultMqCient.java
+END
+UpdateGeofenceAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/3904/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateGeofenceAlert.java
+END
+UpdateAsyncAudit.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/anytraq/anytraq/!svn/ver/3654/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateAsyncAudit.java
+END
+AsyncConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/anytraq/anytraq/!svn/ver/3646/trunk/Services/Async/src/main/java/com/brtracker/services/async/AsyncConstants.java
+END
+InvalidMessageException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/3646/trunk/Services/Async/src/main/java/com/brtracker/services/async/InvalidMessageException.java
+END
+MqClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/anytraq/anytraq/!svn/ver/3608/trunk/Services/Async/src/main/java/com/brtracker/services/async/MqClient.java
+END
+UpdateDriverBehavior.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/3647/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateDriverBehavior.java
+END
+MessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/anytraq/anytraq/!svn/ver/4155/trunk/Services/Async/src/main/java/com/brtracker/services/async/MessageHandler.java
+END
+AsyncBootstrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/3608/trunk/Services/Async/src/main/java/com/brtracker/services/async/AsyncBootstrapper.java
+END
+NagiosMessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/4155/trunk/Services/Async/src/main/java/com/brtracker/services/async/NagiosMessageHandler.java
+END
+UpdateDriverAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/3659/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateDriverAlert.java
+END
+AccountLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/anytraq/anytraq/!svn/ver/2873/trunk/Services/Async/src/main/java/com/brtracker/services/async/AccountLookup.java
+END
+UpdateVehicleStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/4045/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateVehicleStatus.java
+END
+UpdateNagiosMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/4148/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateNagiosMessage.java
+END
+ServiceLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/anytraq/anytraq/!svn/ver/2997/trunk/Services/Async/src/main/java/com/brtracker/services/async/ServiceLookup.java
+END
+UpdateSpeedAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/anytraq/anytraq/!svn/ver/3904/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateSpeedAlert.java
+END
+UpdateActivityReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/4226/trunk/Services/Async/src/main/java/com/brtracker/services/async/UpdateActivityReport.java
+END

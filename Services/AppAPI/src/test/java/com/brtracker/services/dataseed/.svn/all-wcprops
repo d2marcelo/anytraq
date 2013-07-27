@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/anytraq/anytraq/!svn/ver/2095/trunk/Services/AppAPI/src/test/java/com/brtracker/services/dataseed
+END
+GeoLeg.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/anytraq/anytraq/!svn/ver/1034/trunk/Services/AppAPI/src/test/java/com/brtracker/services/dataseed/GeoLeg.java
+END
+GeoPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/anytraq/anytraq/!svn/ver/1034/trunk/Services/AppAPI/src/test/java/com/brtracker/services/dataseed/GeoPoint.java
+END
+GenerateGeoRoutes.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/2095/trunk/Services/AppAPI/src/test/java/com/brtracker/services/dataseed/GenerateGeoRoutes.java
+END
+SeedTripData.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/anytraq/anytraq/!svn/ver/2095/trunk/Services/AppAPI/src/test/java/com/brtracker/services/dataseed/SeedTripData.java
+END
+RouteDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/anytraq/anytraq/!svn/ver/1034/trunk/Services/AppAPI/src/test/java/com/brtracker/services/dataseed/RouteDef.java
+END

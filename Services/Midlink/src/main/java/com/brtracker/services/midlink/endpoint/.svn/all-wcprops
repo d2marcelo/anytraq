@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/anytraq/anytraq/!svn/ver/2943/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/endpoint
+END
+DeviceCommandWsApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/3092/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/endpoint/DeviceCommandWsApi.java
+END
+MockDeviceCommandWsApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/anytraq/anytraq/!svn/ver/2988/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/endpoint/MockDeviceCommandWsApi.java
+END
+Start.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/anytraq/anytraq/!svn/ver/1779/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/endpoint/Start.java
+END

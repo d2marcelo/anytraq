@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "jar:spring-2.0.6.jar:org/springframework/beans/factory/xml/spring-beans.dtd">
+
+<beans>
+
+	<bean id="nagiosMessageHandler" class="com.brtracker.services.async.NagiosMessageHandler">
+		<property name="updateNagiosMessage" ref="updateNagiosMessage"/>
+	</bean>
+	
+	<bean id="deviceMessageHandler" class="com.brtracker.services.async.AsyncMessageHandler">
+		<property name="actions">
+			<list>
+				<ref bean="updateGeofenceAlert"/>
+				<ref bean="updateVehicleSpeedGraph"/>
+				<ref bean="updateVehicleFuelGraph"/>
+				<ref bean="updateDriverBehavior"/>
+				<ref bean="updateDriverAlert"/>
+				<ref bean="updateSpeedAlert"/>
+				<ref bean="updateDeviceHistory"/>
+				<ref bean="updateDeviceStatus"/>
+				<ref bean="updateDistanceGraph"/>
+				<ref bean="updateVehicleStatus"/>
+				<ref bean="updateActivityReport"/>
+				<ref bean="updateAsyncAudit"/>
+				<ref bean="updateIdleReport"/>
+				<ref bean="updateDeviceState"/>
+			</list>
+		</property>
+	</bean>
+   
+    <bean id="eventAuditBuilder" class="com.brtracker.shared.utils.EventAuditorBuilder"/>
+  
+  <bean id="updateDeviceState" class="com.brtracker.services.async.UpdateDeviceState">
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>
+	
+  <bean id="updateNagiosMessage" class="com.brtracker.services.async.UpdateNagiosMessage">
+		<property name="dao" ref="asyncDao" />
+	</bean>
+	
+	<bean id="updateVehicleSpeedGraph" class="com.brtracker.services.async.UpdateVehicleSpeedGraph">
+		<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>
+	<bean id="updateVehicleFuelGraph" class="com.brtracker.services.async.UpdateVehicleFuelGraph">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>
+	<bean id="updateDriverBehavior" class="com.brtracker.services.async.UpdateDriverBehavior">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>		
+	<bean id="updateDriverAlert" class="com.brtracker.services.async.UpdateDriverAlert">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>
+	<bean id="updateGeofenceAlert" class="com.brtracker.services.async.UpdateGeofenceAlert">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>
+	<bean id="updateSpeedAlert" class="com.brtracker.services.async.UpdateSpeedAlert">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>	
+	<bean id="updateDeviceHistory" class="com.brtracker.services.async.UpdateDeviceHistory">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>	
+	<bean id="updateDeviceStatus" class="com.brtracker.services.async.UpdateDeviceStatus">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>	
+	<bean id="updateDistanceGraph" class="com.brtracker.services.async.UpdateDistanceGraph">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>	
+	<bean id="updateActivityReport" class="com.brtracker.services.async.UpdateActivityReport">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>		
+	<bean id="updateVehicleStatus" class="com.brtracker.services.async.UpdateVehicleStatus">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>
+	<bean id="updateAsyncAudit" class="com.brtracker.services.async.UpdateAsyncAudit">
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>		
+	<bean id="updateIdleReport" class="com.brtracker.services.async.UpdateDeviceIdleTime">
+	<property name="accountWSClient" ref="accountWSClient" />
+		<property name="dao" ref="asyncDao" />
+		<property name="eventAuditBuilder" ref="eventAuditBuilder" />
+	</bean>						
+
+ </beans>

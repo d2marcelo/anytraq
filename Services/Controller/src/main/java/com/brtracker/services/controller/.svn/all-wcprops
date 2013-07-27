@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/anytraq/anytraq/!svn/ver/2338/trunk/Services/Controller/src/main/java/com/brtracker/services/controller
+END
+DefaultAlertConfigurationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/anytraq/anytraq/!svn/ver/2057/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/DefaultAlertConfigurationManager.java
+END
+AlertManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/1440/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/AlertManager.java
+END
+CityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/1340/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/CityManager.java
+END
+MqClientFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/1833/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/MqClientFactory.java
+END
+DefaultMqCient.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/1833/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/DefaultMqCient.java
+END
+StateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/1340/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/StateManager.java
+END
+AMQMessageFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/1999/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/AMQMessageFactory.java
+END
+MqClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/anytraq/anytraq/!svn/ver/1833/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/MqClient.java
+END
+VehicleHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/VehicleHandler.java
+END
+AffiliateUserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/2217/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/AffiliateUserManager.java
+END
+AffiliateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/2242/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/AffiliateManager.java
+END
+MessagePlaceHolderManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/anytraq/anytraq/!svn/ver/1485/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/MessagePlaceHolderManager.java
+END
+DriverVehicleMapManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/2293/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/DriverVehicleMapManager.java
+END
+GeofenceAlertConfigurationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/anytraq/anytraq/!svn/ver/1973/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/GeofenceAlertConfigurationManager.java
+END
+AccountUserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/2232/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/AccountUserManager.java
+END
+AccountManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/2242/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/AccountManager.java
+END
+DeviceVehicleMapManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/2293/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/DeviceVehicleMapManager.java
+END
+DriverHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/2338/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/DriverHandler.java
+END
+DeviceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/DeviceManager.java
+END
+CountryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/1340/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/CountryManager.java
+END

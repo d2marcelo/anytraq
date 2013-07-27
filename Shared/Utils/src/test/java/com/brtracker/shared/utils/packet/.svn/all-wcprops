@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/anytraq/anytraq/!svn/ver/4150/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet
+END
+EnforaMessageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/EnforaMessageTest.java
+END
+DefaultXirgoEventReaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/DefaultXirgoEventReaderTest.java
+END
+XirgoFixtures.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/anytraq/anytraq/!svn/ver/4286/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/XirgoFixtures.java
+END
+EnforaFixtures.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/EnforaFixtures.java
+END
+BasePacketReaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/BasePacketReaderTest.java
+END
+ApplicationMessageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/4128/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/ApplicationMessageTest.java
+END
+GpsReaderUtilsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/4150/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/GpsReaderUtilsTest.java
+END
+XirgoMessageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/4286/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/XirgoMessageTest.java
+END
+PacketFixture.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/anytraq/anytraq/!svn/ver/4128/trunk/Shared/Utils/src/test/java/com/brtracker/shared/utils/packet/PacketFixture.java
+END

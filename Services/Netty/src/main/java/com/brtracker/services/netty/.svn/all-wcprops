@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/anytraq/anytraq/!svn/ver/3081/trunk/Services/Netty/src/main/java/com/brtracker/services/netty
+END
+DeviceConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/anytraq/anytraq/!svn/ver/2652/trunk/Services/Netty/src/main/java/com/brtracker/services/netty/DeviceConnection.java
+END
+MessageParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/anytraq/anytraq/!svn/ver/4016/trunk/Services/Netty/src/main/java/com/brtracker/services/netty/MessageParser.java
+END
+JMSConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/anytraq/anytraq/!svn/ver/3139/trunk/Services/Netty/src/main/java/com/brtracker/services/netty/JMSConnector.java
+END
+MessageProducerHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/682/trunk/Services/Netty/src/main/java/com/brtracker/services/netty/MessageProducerHandler.java
+END
+MessageType.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/anytraq/anytraq/!svn/ver/391/trunk/Services/Netty/src/main/java/com/brtracker/services/netty/MessageType.java
+END
+TempSchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/anytraq/anytraq/!svn/ver/697/trunk/Services/Netty/src/main/java/com/brtracker/services/netty/TempSchema.java
+END
+MessageContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/anytraq/anytraq/!svn/ver/1566/trunk/Services/Netty/src/main/java/com/brtracker/services/netty/MessageContext.java
+END

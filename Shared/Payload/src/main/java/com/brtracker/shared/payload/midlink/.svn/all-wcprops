@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/anytraq/anytraq/!svn/ver/3751/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink
+END
+DeviceEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/3562/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/DeviceEvent.java
+END
+MediaEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/anytraq/anytraq/!svn/ver/3751/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/MediaEntry.java
+END
+MidlinkInterfaceLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/3038/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/MidlinkInterfaceLookup.java
+END
+DeviceEventType.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/3562/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/DeviceEventType.java
+END
+ListCommandTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/2914/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/ListCommandTemplate.java
+END
+GPSMessageReason.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/492/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/GPSMessageReason.java
+END
+DeviceMessageType.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/578/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/DeviceMessageType.java
+END
+CommandRisk.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/2916/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandRisk.java
+END
+CommandCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/3565/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandCode.java
+END
+CommandTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/2942/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandTemplate.java
+END
+DeviceIoConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/3032/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/DeviceIoConfig.java
+END
+CommandState.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/2916/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandState.java
+END
+CommandIoKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/3034/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandIoKey.java
+END
+CommandIoNameKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/3048/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandIoNameKey.java
+END
+VehicleState.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/3671/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/VehicleState.java
+END
+MediaType.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/3736/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/MediaType.java
+END
+CommandRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/3122/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandRequest.java
+END
+ListCommandIoConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/3032/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/ListCommandIoConfig.java
+END
+ListDeviceCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/2914/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/ListDeviceCommand.java
+END
+MobileDeviceEventType.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/3674/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/MobileDeviceEventType.java
+END
+CommandIoConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/3032/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandIoConfig.java
+END
+MobileDeviceMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/3691/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/MobileDeviceMessage.java
+END
+CommandIoConfigState.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/3032/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/CommandIoConfigState.java
+END
+DeviceCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/2924/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/midlink/DeviceCommand.java
+END

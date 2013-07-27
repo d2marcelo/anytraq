@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/test/java/com/brtracker/services/midlink
+END
+SendCommandRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/4131/trunk/Services/Midlink/src/test/java/com/brtracker/services/midlink/SendCommandRequest.java
+END
+PicoloCommandTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/3792/trunk/Services/Midlink/src/test/java/com/brtracker/services/midlink/PicoloCommandTest.java
+END
+Playground.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/anytraq/anytraq/!svn/ver/3792/trunk/Services/Midlink/src/test/java/com/brtracker/services/midlink/Playground.java
+END
+DispatcherTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/anytraq/anytraq/!svn/ver/4090/trunk/Services/Midlink/src/test/java/com/brtracker/services/midlink/DispatcherTest.java
+END
+WliGpsRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/3792/trunk/Services/Midlink/src/test/java/com/brtracker/services/midlink/WliGpsRequest.java
+END

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<import resource="classpath:spring/system-configuration-beans.xml"/>
+
+	<import resource="classpath:spring/packet-reader-beans.xml"/>
+
+	<bean id="deviceConnectionLookup" 
+		class="com.brtracker.services.netty.server.DeviceConnectionLookup"/>
+	
+	<bean id="jmsSender" class="com.brtracker.shared.utils.activemq.JmsSender">
+		<property name="systemConfiguration" ref="systemConfiguration"/>
+	</bean>
+
+	<bean id="jmsConnector" class="com.brtracker.services.netty.JMSConnector">
+		<property name="jmsSender" ref="jmsSender"/>
+	</bean>
+	
+	<import resource="classpath:spring/picolo-module-beans.xml"/>
+	<import resource="classpath:spring/restful-module-beans.xml"/>
+	
+	<bean id="nettyServer" 
+		class="com.brtracker.services.netty.server.NettyServer">
+	 	<property name="nettyModules">
+	 		<list>
+ 	 			<ref bean="picoloNettyModule"/>
+	 			<ref bean="teltonikaNettyModule"/>
+	 			<ref bean="restfulNettyModule"/>
+	 			<ref bean="enforaNettyModule"/>
+		 		<ref bean="xirgoNettyModule"/>
+		 		<ref bean="nagiosMonitorModule"/>
+	 		</list>
+ 		</property>
+	</bean>
+	
+ </beans>

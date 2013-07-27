@@ -1,0 +1,78 @@
+{
+	"XirgoMessage" : {
+    	"LT": "latitude",
+        "LN": "longitude",
+        "MI": "distance",
+        "SP": "speed",
+        "SV": "satellite"
+	},
+	
+    "EnforaMT3000Message" : {
+    	"payloadType1.gpsLat": "latitude",
+        "payloadType1.gpsLng": "longitude",
+        "payloadType1.gpsOdo": "distance",
+        "payloadType1.gpsSpeed": "speed",
+        "payloadType1.gpsNumSat": "satellite"
+    },
+    
+    "PicoloGpsInfoMessage" : {
+        "appMessage.gpsInfo.gpsdata.longitude": "longitude",
+        "appMessage.gpsInfo.gpsdata.latitude": "latitude",
+        "appMessage.gpsInfo.gpsdata.course": "course",
+        "appMessage.gpsInfo.gpsdata.speed": "speed",
+        "appMessage.gpsInfo.unitTime": "timeMillis",
+        "appMessage.sequenceNumber": "messageUniqueId",
+        "appMessage.gpsInfo.distance": "distance" ,
+        "appMessage.gpsInfo.satellite": "satellite"        
+    },
+    
+    "PicoloGpsInfoMessage.GpsUnitStatusAction" : {},
+     
+    "PicoloGpsInfoMessage.GpsTripAction" : {
+        "appMessage.gpsInfo.reason" : [
+            "", "", "entering_no_move", "no_move_timeout", "started_moving", "", "", "", "", "", "", "boundary_entry", "boundary_exit", "speeding"
+        ],
+        
+        "appMessage.gpsInfo.gpsdata.atmode": "atmode", 
+        
+        "appMessage.gpsInfo.alarmCounters" : ["sharp_turns", "quick_accel", "sharp_breaking", "sharp_lane_cross"]
+        
+    },
+    
+    "PicoloJBusMessage" : {
+        "appMessage.jBus.unitTime": "timeMillis",
+        "appMessage.sequenceNumber": "messageUniqueId",
+        "appMessage.jBus.gpsData.longitude": "longitude",
+        "appMessage.jBus.gpsData.latitude": "latitude"
+     },
+     
+    "PicoloJBusMessage.JBusTripAction" : {
+        "appMessage.jBus.tripState": "tripState",
+        "appMessage.jBus.reportType": "reportType",
+        "appMessage.jBus.totalDistance": "totalDistance",
+        "appMessage.jBus.fuelLevelPri": "fuelLevelPri",
+        "appMessage.jBus.fuelLevelSec": "fuelLevelSec",
+        "appMessage.jBus.avgFuelLevel": "avgFuelLevel",
+        "appMessage.jBus.readSpeed": "speed"
+    },
+    
+    "PicoloIOServiceMessage" : {
+        "appMessage.ioService.dryInput1" : "dryInput1",
+        "appMessage.ioService.dryInput2" : "dryInput2",
+        "appMessage.ioService.dryInput3" : "dryInput3",
+        "appMessage.ioService.dryInput4" : "dryInput4",
+        "appMessage.ioService.dryInput5" : "dryInput5",
+        "appMessage.ioService.dryInput6" : "dryInput6",
+        "appMessage.ioService.dryInput7" : "dryInput7",
+        "appMessage.ioService.dryInput8" : "dryInput8",
+
+        "appMessage.ioService.output1" : "output1",
+        "appMessage.ioService.output2" : "output2",
+        "appMessage.ioService.output3" : "output3",
+        "appMessage.ioService.output4" : "output4",
+        "appMessage.ioService.unitTime": "timeMillis",
+        "appMessage.ioService.gpsData.longitude": "longitude",
+        "appMessage.ioService.gpsData.latitude" : "latitude",
+        "appMessage.sequenceNumber": "messageUniqueId"
+    }
+}

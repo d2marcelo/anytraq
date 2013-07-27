@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/anytraq/anytraq/!svn/ver/4152/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet
+END
+PacketReaderContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/PacketReaderContext.java
+END
+PacketToString.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/2986/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/PacketToString.java
+END
+PacketReaderRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/PacketReaderRegistry.java
+END
+PicoloPacketPreprocessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/2986/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/PicoloPacketPreprocessor.java
+END
+PacketDefinitionConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/PacketDefinitionConstants.java
+END
+GPSReaderUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/GPSReaderUtils.java
+END
+PacketReaderController.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/4088/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/packet/PacketReaderController.java
+END

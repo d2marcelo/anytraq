@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/anytraq/anytraq/!svn/ver/2244/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao
+END
+DriverVehicleMapDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/anytraq/anytraq/!svn/ver/1904/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/DriverVehicleMapDAOImpl.java
+END
+DriverDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/1703/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/DriverDAOImpl.java
+END
+AccountUserDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/2225/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/AccountUserDAOImpl.java
+END
+AccountDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/2209/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/AccountDAOImpl.java
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/2182/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/UserDAO.java
+END
+DeviceVehicleMapDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/anytraq/anytraq/!svn/ver/1875/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/DeviceVehicleMapDAOImpl.java
+END
+AlertConfigurationDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/anytraq/anytraq/!svn/ver/1515/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/AlertConfigurationDAOImpl.java
+END
+DeviceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/1875/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/DeviceDAOImpl.java
+END
+CountryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/1423/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/CountryDAOImpl.java
+END
+AlertDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/1441/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/AlertDAOImpl.java
+END
+CityDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/928/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/CityDAOImpl.java
+END
+LookupDAOCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/2244/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/LookupDAOCriteria.java
+END
+VehicleDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/1695/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/VehicleDAOImpl.java
+END
+StateDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/928/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/StateDAOImpl.java
+END
+ControllerDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/483/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/ControllerDAOImpl.java
+END
+AffiliateUserDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/anytraq/anytraq/!svn/ver/2225/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/AffiliateUserDAOImpl.java
+END
+AffiliateDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/2197/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/AffiliateDAOImpl.java
+END
+MessagePlaceHolderDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/anytraq/anytraq/!svn/ver/1484/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/dao/MessagePlaceHolderDAOImpl.java
+END

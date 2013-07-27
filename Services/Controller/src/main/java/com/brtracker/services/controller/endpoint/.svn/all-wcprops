@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint
+END
+VehicleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/VehicleService.java
+END
+StateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/250/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/StateService.java
+END
+AffiliateUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/anytraq/anytraq/!svn/ver/2182/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/AffiliateUserService.java
+END
+AffiliateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/anytraq/anytraq/!svn/ver/2212/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/AffiliateService.java
+END
+MessagePlaceHolderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/anytraq/anytraq/!svn/ver/1484/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/MessagePlaceHolderService.java
+END
+DriverVehicleMapService.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/DriverVehicleMapService.java
+END
+DriverService.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/DriverService.java
+END
+GeofenceAlertConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/anytraq/anytraq/!svn/ver/1554/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/GeofenceAlertConfigurationService.java
+END
+AccountUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/anytraq/anytraq/!svn/ver/2184/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/AccountUserService.java
+END
+AccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/2210/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/AccountService.java
+END
+DeviceVehicleMapService.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/DeviceVehicleMapService.java
+END
+DeviceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/2283/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/DeviceService.java
+END
+CountryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/250/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/CountryService.java
+END
+DefaultAlertConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/anytraq/anytraq/!svn/ver/1490/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/DefaultAlertConfigurationService.java
+END
+AlertService.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/1436/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/AlertService.java
+END
+CityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/250/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/CityService.java
+END
+Start.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/1833/trunk/Services/Controller/src/main/java/com/brtracker/services/controller/endpoint/Start.java
+END

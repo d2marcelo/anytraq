@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anytraq/anytraq/!svn/ver/4255/trunk/Shared/Utils/src/main/resources/json
+END
+enfora-schema.json
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/anytraq/anytraq/!svn/ver/4012/trunk/Shared/Utils/src/main/resources/json/enfora-schema.json
+END
+picolo-schema.json
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/anytraq/anytraq/!svn/ver/4255/trunk/Shared/Utils/src/main/resources/json/picolo-schema.json
+END
+xirgo-schema.json
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/anytraq/anytraq/!svn/ver/4084/trunk/Shared/Utils/src/main/resources/json/xirgo-schema.json
+END

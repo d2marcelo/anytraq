@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anytraq/anytraq/!svn/ver/2076/trunk/Services/Notification/src/main/resources
+END
+TwilioCredentials.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/resources/TwilioCredentials.properties
+END
+notification.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/resources/notification.properties
+END
+AwsCredentials.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/resources/AwsCredentials.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/anytraq/anytraq/!svn/ver/4216/trunk/Services/Notification/src/main/resources/log4j.properties
+END

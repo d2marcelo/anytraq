@@ -1,0 +1,92 @@
+package com.brtracker.services.netty.server;
+
+import java.net.InetSocketAddress;
+import java.util.concurrent.Executors;
+
+import org.jboss.netty.bootstrap.ServerBootstrap;
+import org.jboss.netty.channel.Channel;
+import org.jboss.netty.channel.ChannelHandlerContext;
+import org.jboss.netty.channel.ChannelPipeline;
+import org.jboss.netty.channel.ChannelPipelineFactory;
+import org.jboss.netty.channel.Channels;
+import org.jboss.netty.channel.ExceptionEvent;
+import org.jboss.netty.channel.MessageEvent;
+import org.jboss.netty.channel.SimpleChannelHandler;
+import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
+
+import com.brtracker.shared.utils.logging.MyLogger;
+
+public class NettyModule {
+
+	private MyLogger logger = new MyLogger(NettyModule.class);
+	
+	private int port;
+	private MessageEventProcessor eventProcessor;
+	
+	public void start() {
+		
+    	logger.logInfo("Creating NIO connection:" );
+    	
+    	ServerBootstrap bootstrap = new ServerBootstrap(
+    			new NioServerSocketChannelFactory(
+    					Executors.newCachedThreadPool(), Executors.newCachedThreadPool()));
+    	
+        logger.logInfo("Setting pipelinefactory." );
+        
+        bootstrap.setPipelineFactory(new ChannelPipelineFactory() {
+            public ChannelPipeline getPipeline() {
+                return Channels.pipeline(new MessageChannelHandler(port, eventProcessor));
+            }
+        });
+        
+        bootstrap.setOption("child.keepAlive", true);
+        logger.logInfo("Listening on port " + port);
+        bootstrap.bind(new InetSocketAddress(port));
+        
+	}
+
+	private static class MessageChannelHandler extends SimpleChannelHandler {
+		
+		private MyLogger logger = new MyLogger(MessageChannelHandler.class);
+		
+		private MessageEventProcessor eventProcessor;
+		private int port;
+		
+	    public MessageChannelHandler(int port, MessageEventProcessor eventProcessor) {
+	    	this.port = port;
+	    	this.eventProcessor = eventProcessor;
+		}
+
+		@Override
+	    public void messageReceived(ChannelHandlerContext context, final MessageEvent messageEvent) {
+			logger.logInfo("Receiving message");
+			eventProcessor.processMessage(messageEvent, port);
+			logger.logDebug("Message processed sucessfully");
+		}
+		
+	    @Override
+	    public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e) {
+	        e.getCause().printStackTrace();
+	        Channel ch = e.getChannel();
+	        ch.close();
+	    }
+
+	}
+
+	public void shutdown() {
+		// TODO implement graceful shutdown
+	}
+	
+	public int getPort() {
+		return port;
+	}
+
+	public void setPort(int port) {
+		this.port = port;
+	}
+
+	public void setEventProcessor(MessageEventProcessor eventProcessor) {
+		this.eventProcessor = eventProcessor;
+	}
+
+}

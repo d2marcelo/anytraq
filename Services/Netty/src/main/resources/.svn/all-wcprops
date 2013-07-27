@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anytraq/anytraq/!svn/ver/1686/trunk/Services/Netty/src/main/resources
+END
+picolo-messages.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/anytraq/anytraq/!svn/ver/1566/trunk/Services/Netty/src/main/resources/picolo-messages.txt
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/anytraq/anytraq/!svn/ver/1566/trunk/Services/Netty/src/main/resources/log4j.properties
+END
+teltonika-messages.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anytraq/anytraq/!svn/ver/1566/trunk/Services/Netty/src/main/resources/teltonika-messages.txt
+END

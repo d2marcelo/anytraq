@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/anytraq/anytraq/!svn/ver/4123/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/metadata/data
+END
+NotificationTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/747/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/metadata/data/NotificationTemplate.java
+END
+MessageSchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/709/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/metadata/data/MessageSchema.java
+END
+NotificationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/747/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/metadata/data/NotificationType.java
+END
+EventAuditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/3521/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/metadata/data/EventAuditor.java
+END
+SystemResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/1212/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/metadata/data/SystemResource.java
+END

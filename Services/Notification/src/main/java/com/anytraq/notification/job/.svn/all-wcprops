@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/anytraq/anytraq/!svn/ver/2069/trunk/Services/Notification/src/main/java/com/anytraq/notification/job
+END
+NotificationCronJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/java/com/anytraq/notification/job/NotificationCronJob.java
+END
+NotificationJobStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/2069/trunk/Services/Notification/src/main/java/com/anytraq/notification/job/NotificationJobStarter.java
+END

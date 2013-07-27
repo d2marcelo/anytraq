@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/anytraq/anytraq/!svn/ver/2316/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing
+END
+StaleDeviceMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/StaleDeviceMonitor.java
+END
+RestfulMessageDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/anytraq/anytraq/!svn/ver/4130/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/RestfulMessageDispatcher.java
+END
+DefaultMqCient.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/1757/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/DefaultMqCient.java
+END
+MessageHandlerTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/778/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/MessageHandlerTask.java
+END
+DeviceStateDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/DeviceStateDaoImpl.java
+END
+DeviceEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/anytraq/anytraq/!svn/ver/3677/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/DeviceEventListener.java
+END
+FileBasedMessagePropertyResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/anytraq/anytraq/!svn/ver/956/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/FileBasedMessagePropertyResolver.java
+END
+MessagePropertyResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/anytraq/anytraq/!svn/ver/956/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/MessagePropertyResolver.java
+END
+MqClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/1757/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/MqClient.java
+END
+PacketListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/3677/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/PacketListener.java
+END
+BaseMessageAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/4153/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/BaseMessageAction.java
+END
+PacketDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/1715/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/PacketDispatcher.java
+END
+MessagingBootstrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/anytraq/anytraq/!svn/ver/3677/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/MessagingBootstrapper.java
+END
+MessageAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/1606/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/MessageAction.java
+END
+DeviceStateAwareMessageAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/DeviceStateAwareMessageAction.java
+END
+MessageTypeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/778/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/MessageTypeHandler.java
+END
+DeviceStateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/DeviceStateDao.java
+END
+MidlinkJobStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/3502/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/MidlinkJobStarter.java
+END
+RestfulMessageAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/anytraq/anytraq/!svn/ver/3322/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/RestfulMessageAction.java
+END
+RestfulMessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/anytraq/anytraq/!svn/ver/3734/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/RestfulMessageHandler.java
+END
+WsClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/835/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/WsClient.java
+END
+DeviceStateEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/3652/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/DeviceStateEntity.java
+END
+DefaultWsClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/835/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/processing/DefaultWsClient.java
+END

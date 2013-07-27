@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/main/resources/hbm
+END
+CommandIoConfig.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/anytraq/anytraq/!svn/ver/3033/trunk/Services/Midlink/src/main/resources/hbm/CommandIoConfig.hbm.xml
+END
+DeviceState.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/main/resources/hbm/DeviceState.hbm.xml
+END
+CommandEvent.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/anytraq/anytraq/!svn/ver/3118/trunk/Services/Midlink/src/main/resources/hbm/CommandEvent.hbm.xml
+END
+CommandTemplate.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/anytraq/anytraq/!svn/ver/3050/trunk/Services/Midlink/src/main/resources/hbm/CommandTemplate.hbm.xml
+END

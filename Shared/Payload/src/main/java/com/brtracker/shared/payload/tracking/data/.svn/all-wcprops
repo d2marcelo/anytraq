@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/anytraq/anytraq/!svn/ver/3783/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data
+END
+DeviceHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/3783/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/DeviceHistory.java
+END
+MediaComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/3772/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/MediaComment.java
+END
+VehicleStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/3455/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/VehicleStatus.java
+END
+AlertReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/3019/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/AlertReport.java
+END
+DeviceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/3019/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/DeviceStatus.java
+END
+NagiosMessageCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/anytraq/anytraq/!svn/ver/4125/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/NagiosMessageCheck.java
+END
+AsyncAudit.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/2779/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/AsyncAudit.java
+END
+ActivityReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/3059/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/ActivityReport.java
+END
+IdleReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/3037/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/IdleReport.java
+END
+DriverBehavior.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/anytraq/anytraq/!svn/ver/3019/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/DriverBehavior.java
+END
+GraphData.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/3019/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/GraphData.java
+END
+MessageAudit.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/2758/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/MessageAudit.java
+END
+AlertMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/3681/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/AlertMessage.java
+END
+Trip.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/anytraq/anytraq/!svn/ver/3775/trunk/Shared/Payload/src/main/java/com/brtracker/shared/payload/tracking/data/Trip.java
+END

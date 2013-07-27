@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anytraq/anytraq/!svn/ver/2316/trunk/Services/Midlink/src/main/resources/spring
+END
+midlink-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/anytraq/anytraq/!svn/ver/3050/trunk/Services/Midlink/src/main/resources/spring/midlink-dao.xml
+END
+midlink-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/anytraq/anytraq/!svn/ver/4130/trunk/Services/Midlink/src/main/resources/spring/midlink-beans.xml
+END
+midlink-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/anytraq/anytraq/!svn/ver/3050/trunk/Services/Midlink/src/main/resources/spring/midlink-datasource.xml
+END

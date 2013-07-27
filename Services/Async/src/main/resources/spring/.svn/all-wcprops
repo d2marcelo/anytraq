@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anytraq/anytraq/!svn/ver/4220/trunk/Services/Async/src/main/resources/spring
+END
+async-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anytraq/anytraq/!svn/ver/4220/trunk/Services/Async/src/main/resources/spring/async-beans.xml
+END
+amq-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/anytraq/anytraq/!svn/ver/4156/trunk/Services/Async/src/main/resources/spring/amq-beans.xml
+END
+async-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/anytraq/anytraq/!svn/ver/3512/trunk/Services/Async/src/main/resources/spring/async-datasource.xml
+END
+async-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/anytraq/anytraq/!svn/ver/4218/trunk/Services/Async/src/main/resources/spring/async-dao.xml
+END

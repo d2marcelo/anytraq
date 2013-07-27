@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/3322/trunk/Services/Midlink/src/test/resources/com/brtracker/services/midlink/processing/application/spring
+END
+test-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/anytraq/anytraq/!svn/ver/3794/trunk/Services/Midlink/src/test/resources/com/brtracker/services/midlink/processing/application/spring/test-beans.xml
+END
+db-test-beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/anytraq/anytraq/!svn/ver/3322/trunk/Services/Midlink/src/test/resources/com/brtracker/services/midlink/processing/application/spring/db-test-beans.xml
+END

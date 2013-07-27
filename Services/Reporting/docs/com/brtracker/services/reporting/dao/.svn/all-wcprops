@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao
+END
+LookupDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/LookupDAOImpl.html
+END
+ReportingDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/ReportingDAOImpl.html
+END
+LookupDAOCriteria.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/LookupDAOCriteria.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/package-frame.html
+END
+ResultDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/ResultDAOImpl.html
+END
+AbstractReportDAOImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/AbstractReportDAOImpl.html
+END
+ResultDAOCriteria.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/ResultDAOCriteria.html
+END
+package-use.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/package-use.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/package-summary.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/package-tree.html
+END
+AbstractResultDAOCriteria.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/312/trunk/Services/Reporting/docs/com/brtracker/services/reporting/dao/AbstractResultDAOCriteria.html
+END

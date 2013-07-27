@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/anytraq/anytraq/!svn/ver/4240/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils
+END
+EventAuditorBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/3503/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/EventAuditorBuilder.java
+END
+UnitType.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/anytraq/anytraq/!svn/ver/3010/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/UnitType.java
+END
+EventType.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/anytraq/anytraq/!svn/ver/3503/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/EventType.java
+END
+StringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/anytraq/anytraq/!svn/ver/4286/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/StringUtil.java
+END
+ConversionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/anytraq/anytraq/!svn/ver/3903/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/ConversionUtils.java
+END
+DateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/anytraq/anytraq/!svn/ver/4240/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/DateUtil.java
+END
+SystemConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/3940/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/SystemConfiguration.java
+END
+SystemConfigurationUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/3158/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/SystemConfigurationUtils.java
+END
+SystemResourcesUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/3290/trunk/Shared/Utils/src/main/java/com/brtracker/shared/utils/SystemResourcesUtil.java
+END

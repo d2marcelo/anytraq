@@ -1,0 +1,16 @@
+com.brtracker.services.controller.endpoint.AccountService
+com.brtracker.services.controller.endpoint.CityService
+com.brtracker.services.controller.endpoint.CountryService
+com.brtracker.services.controller.endpoint.DeviceService
+com.brtracker.services.controller.endpoint.DriverService
+com.brtracker.services.controller.endpoint.DriverVehicleMapService
+com.brtracker.services.controller.endpoint.DeviceVehicleMapService
+com.brtracker.services.controller.endpoint.StateService
+com.brtracker.services.controller.endpoint.AccountUserService
+com.brtracker.services.controller.endpoint.AffiliateUserService
+com.brtracker.services.controller.endpoint.AffiliateService
+com.brtracker.services.controller.endpoint.VehicleService
+com.brtracker.services.controller.endpoint.AlertService
+com.brtracker.services.controller.endpoint.MessagePlaceHolderService
+com.brtracker.services.controller.endpoint.DefaultAlertConfigurationService
+com.brtracker.services.controller.endpoint.GeofenceAlertConfigurationService

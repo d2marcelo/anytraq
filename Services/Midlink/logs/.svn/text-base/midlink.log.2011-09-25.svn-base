@@ -1,0 +1,194 @@
+2011-09-25 10:25:54,872  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 10:25:58,184 ERROR [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Error auditing the given packet
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:65)
+	at com.brtracker.services.midlink.processing.application.MessageAuditLogger.auditMessage(MessageAuditLogger.java:35)
+	at com.brtracker.services.midlink.processing.PacketDispatcher.dispatchPacket(PacketDispatcher.java:47)
+	at com.brtracker.services.midlink.DispatcherTest.testDispatcher(DispatcherTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at org.springframework.test.ConditionalTestCase.runBare(ConditionalTestCase.java:69)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:98)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:107)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at $Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: java.lang.NullPointerException
+	at com.brtracker.shared.utils.SystemConfigurationUtils.getConfigElement(SystemConfigurationUtils.java:48)
+	at com.brtracker.shared.utils.activemq.JmsSender.getProducer(JmsSender.java:110)
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:58)
+	... 32 more
+2011-09-25 10:25:58,187  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 10:25:58,199  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - Just waiting ....TeltonikaAVLMessage
+2011-09-25 10:31:56,965  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 10:32:10,670 ERROR [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Error auditing the given packet
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:65)
+	at com.brtracker.services.midlink.processing.application.MessageAuditLogger.auditMessage(MessageAuditLogger.java:35)
+	at com.brtracker.services.midlink.processing.PacketDispatcher.dispatchPacket(PacketDispatcher.java:47)
+	at com.brtracker.services.midlink.DispatcherTest.testDispatcher(DispatcherTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at org.springframework.test.ConditionalTestCase.runBare(ConditionalTestCase.java:69)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:130)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.NullPointerException
+	at com.brtracker.shared.utils.SystemConfigurationUtils.getConfigElement(SystemConfigurationUtils.java:48)
+	at com.brtracker.shared.utils.activemq.JmsSender.getProducer(JmsSender.java:110)
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:58)
+	... 20 more
+2011-09-25 10:32:10,704  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 11:05:16,164  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 11:05:18,575 ERROR [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Error auditing the given packet
+java.lang.RuntimeException: com.brtracker.shared.utils.SystemConfigurationException: No configuration found for service MIDLINK_TOPIC
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:65)
+	at com.brtracker.services.midlink.processing.application.MessageAuditLogger.auditMessage(MessageAuditLogger.java:35)
+	at com.brtracker.services.midlink.processing.PacketDispatcher.dispatchPacket(PacketDispatcher.java:47)
+	at com.brtracker.services.midlink.DispatcherTest.testDispatcher(DispatcherTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at org.springframework.test.ConditionalTestCase.runBare(ConditionalTestCase.java:69)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:98)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:107)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at $Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: com.brtracker.shared.utils.SystemConfigurationException: No configuration found for service MIDLINK_TOPIC
+	at com.brtracker.shared.utils.SystemConfigurationUtils.getConfigElement(SystemConfigurationUtils.java:50)
+	at com.brtracker.shared.utils.activemq.JmsSender.getProducer(JmsSender.java:110)
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:58)
+	... 32 more
+2011-09-25 11:05:18,577  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 11:05:18,609  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - Just waiting ....TeltonikaAVLMessage
+2011-09-25 11:05:18,635 ERROR [com.brtracker.services.midlink.processing.application.GpsUnitStatusAction] [pool-1-thread-1] - Unexpected exception 
+java.lang.NullPointerException
+	at com.brtracker.services.midlink.processing.DefaultMqCient.sendMessage(DefaultMqCient.java:15)
+	at com.brtracker.services.midlink.processing.application.TeltonikaUnitStatusAction.sendMessage(TeltonikaUnitStatusAction.java:114)
+	at com.brtracker.services.midlink.processing.application.TeltonikaUnitStatusAction.execute(TeltonikaUnitStatusAction.java:75)
+	at com.brtracker.services.midlink.processing.MessageTypeHandler.handleMessage(MessageTypeHandler.java:20)
+	at com.brtracker.services.midlink.processing.MessageHandlerTask.run(MessageHandlerTask.java:17)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2011-09-25 11:05:18,643 ERROR [com.brtracker.services.midlink.processing.application.TeltonikaTripAction] [pool-1-thread-1] - Unexpected exception 
+java.lang.NullPointerException
+	at com.brtracker.services.midlink.processing.DefaultMqCient.sendMessage(DefaultMqCient.java:15)
+	at com.brtracker.services.midlink.processing.application.TeltonikaTripAction.sendMessage(TeltonikaTripAction.java:132)
+	at com.brtracker.services.midlink.processing.application.TeltonikaTripAction.execute(TeltonikaTripAction.java:65)
+	at com.brtracker.services.midlink.processing.MessageTypeHandler.handleMessage(MessageTypeHandler.java:20)
+	at com.brtracker.services.midlink.processing.MessageHandlerTask.run(MessageHandlerTask.java:17)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2011-09-25 11:45:42,227  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 11:45:48,057 ERROR [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Error auditing the given packet
+java.lang.RuntimeException: com.brtracker.shared.utils.SystemConfigurationException: No configuration found for service MIDLINK_TOPIC
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:65)
+	at com.brtracker.services.midlink.processing.application.MessageAuditLogger.auditMessage(MessageAuditLogger.java:35)
+	at com.brtracker.services.midlink.processing.PacketDispatcher.dispatchPacket(PacketDispatcher.java:47)
+	at com.brtracker.services.midlink.DispatcherTest.testDispatcher(DispatcherTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at org.springframework.test.ConditionalTestCase.runBare(ConditionalTestCase.java:69)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:130)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: com.brtracker.shared.utils.SystemConfigurationException: No configuration found for service MIDLINK_TOPIC
+	at com.brtracker.shared.utils.SystemConfigurationUtils.getConfigElement(SystemConfigurationUtils.java:50)
+	at com.brtracker.shared.utils.activemq.JmsSender.getProducer(JmsSender.java:110)
+	at com.brtracker.shared.utils.activemq.JmsSender.sendTextMessage(JmsSender.java:58)
+	... 20 more
+2011-09-25 11:45:48,059  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 14:17:39,260  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:22:21,344  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:27:59,415  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:43:04,178  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:43:48,048  INFO [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Message successfuly audited
+2011-09-25 14:43:48,048  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 14:48:33,622  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:48:46,433  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:48:57,594  INFO [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Message successfuly audited
+2011-09-25 14:48:57,595  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 14:50:02,018  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:50:50,572  INFO [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Message successfuly audited
+2011-09-25 14:50:50,572  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 14:53:31,603  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 14:53:45,116  INFO [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Message successfuly audited
+2011-09-25 14:53:45,117  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 14:54:23,979  INFO [com.brtracker.services.midlink.processing.application.GpsUnitStatusAction] [pool-1-thread-1] - Succesffully action TeltonikaUnitStatusAction executed on unit 123423452345
+2011-09-25 14:54:52,797  INFO [com.brtracker.services.midlink.processing.application.TeltonikaTripAction] [pool-1-thread-1] - Succesffully action TeltonikaTripAction executed on unit 123423452345
+2011-09-25 14:54:56,564  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - Just waiting ....TeltonikaAVLMessage
+2011-09-25 15:25:52,431  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 15:26:03,825  INFO [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Message successfuly audited
+2011-09-25 15:26:03,825  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 15:26:35,280  INFO [com.brtracker.services.midlink.processing.application.GpsUnitStatusAction] [pool-1-thread-1] - Succesffully action TeltonikaUnitStatusAction executed on unit 123423452345
+2011-09-25 15:28:35,452  INFO [com.brtracker.services.midlink.DispatcherTest] [main] - Loading context for locations: classpath:spring/midlink-beans.xml
+2011-09-25 15:29:10,434  INFO [com.brtracker.services.midlink.processing.application.MessageAuditLogger] [main] - Message successfuly audited
+2011-09-25 15:29:10,435  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - PacketDispatcher message type handler found for TeltonikaAVLMessage
+2011-09-25 15:29:11,773  INFO [com.brtracker.services.midlink.processing.PacketDispatcher] [main] - Just waiting ....TeltonikaAVLMessage
+2011-09-25 15:29:23,847  INFO [com.brtracker.services.midlink.processing.application.GpsUnitStatusAction] [pool-1-thread-1] - Succesffully action TeltonikaUnitStatusAction executed on unit 123423452345

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/webapp/WEB-INF
+END
+application
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anytraq/anytraq/!svn/ver/270/trunk/Services/Notification/src/main/webapp/WEB-INF/application
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/webapp/WEB-INF/applicationContext.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/webapp/WEB-INF/web.xml
+END

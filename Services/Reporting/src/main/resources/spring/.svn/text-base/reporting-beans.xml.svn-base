@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "jar:spring-2.0.6.jar:org/springframework/beans/factory/xml/spring-beans.dtd">
+
+<beans>
+
+	<bean id="updateDistanceTraveledReport" 
+		class="com.brtracker.services.reporting.UpdateDistanceTraveled"/>
+
+	<bean id="updateIdleTimeReport" 
+		class="com.brtracker.services.async.UpdateIdleTime"/>
+	
+	<bean id="updateFuelConsumptionReport" 
+		class="com.brtracker.services.async.UpdateFuelConsumption"/>		
+		
+	<bean id="updateWorkHoursReport" 
+		class="com.brtracker.services.async.UpdateWorkHours"/>
+	
+	
+	<bean id="deviceMessageHandler" class="com.brtracker.services.async.AsyncMessageHandler">
+		<property name="actions">
+			<list>
+				<ref bean="updateVehicleSpeedGraph"/>
+				<ref bean="updateVehicleFuelGraph"/>
+				<ref bean="updateDriverBehavior"/>
+				<ref bean="updateDeviceAlert"/>
+				<ref bean="updateDriverAlert"/>
+				<ref bean="updateVehicleAlert"/>
+				<ref bean="updateGeofenceAlert"/>
+			</list>
+		</property>
+	</bean>
+	
+ </beans>

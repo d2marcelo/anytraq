@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/anytraq/anytraq/!svn/ver/2249/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi
+END
+DeviceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/anytraq/anytraq/!svn/ver/2249/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi/DeviceTest.java
+END
+LocationGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/anytraq/anytraq/!svn/ver/1025/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi/LocationGenerator.java
+END
+AppAPISuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/anytraq/anytraq/!svn/ver/1083/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi/AppAPISuite.java
+END
+BaseAppAPITest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/853/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi/BaseAppAPITest.java
+END
+Temp.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/anytraq/anytraq/!svn/ver/1025/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi/Temp.java
+END
+GraphDataTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/anytraq/anytraq/!svn/ver/1237/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi/GraphDataTest.java
+END
+AccountTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/anytraq/anytraq/!svn/ver/2190/trunk/Services/AppAPI/src/test/java/com/brtracker/services/appapi/AccountTest.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/anytraq/anytraq/!svn/ver/1780/trunk/Services/Reporting/src/main/java/com/brtracker/services/reporting/endpoint
+END
+ReportingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/anytraq/anytraq/!svn/ver/1780/trunk/Services/Reporting/src/main/java/com/brtracker/services/reporting/endpoint/ReportingService.java
+END
+Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/309/trunk/Services/Reporting/src/main/java/com/brtracker/services/reporting/endpoint/Report.java
+END
+Start.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/anytraq/anytraq/!svn/ver/444/trunk/Services/Reporting/src/main/java/com/brtracker/services/reporting/endpoint/Start.java
+END
+Result.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/309/trunk/Services/Reporting/src/main/java/com/brtracker/services/reporting/endpoint/Result.java
+END

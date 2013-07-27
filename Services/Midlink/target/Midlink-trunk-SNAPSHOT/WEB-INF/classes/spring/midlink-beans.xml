@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+				http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context 
+				http://www.springframework.org/schema/context/spring-context-2.5.xsd
+				http://www.springframework.org/schema/tx 
+				http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="messageTypePropertyResolver" 
+		class="com.brtracker.services.midlink.processing.FileBasedMessagePropertyResolver">
+	 	<property name="propertyMappingFileNames">
+	 		<list>
+	 			<value>json/unit-message-properties.json</value>
+	 		</list>
+ 		</property>
+	</bean>
+
+	<bean id="wsClient" class="com.brtracker.services.midlink.processing.DefaultWsClient"/>
+	
+	<bean id="mqClient" class="com.brtracker.services.midlink.processing.DefaultMqCient">
+		<property name="jmsSender" ref="jmsSender"/>
+	</bean>
+	
+	<bean id="picoloStxCommand" class="com.brtracker.services.midlink.processing.command.PicoloStxCommand">
+		<property name="wsClient" ref="wsClient"/>
+		<property name="systemConfiguration" ref="systemConfiguration"/>
+		<property name="commandEventDao" ref="commandEventDao"/>
+	</bean>
+	
+	<bean id="actionHelper" class="com.brtracker.services.midlink.processing.application.ActionHelper">
+		<property name="deviceStateDao" ref="deviceStateDao"/>
+		<property name="systemConfiguration" ref="systemConfiguration"/>
+	</bean>
+	
+	<bean id="commonAction" abstract="true">
+		<property name="propertyResolver" ref="messageTypePropertyResolver"/>
+		<property name="wsClient" ref="wsClient"/>
+		<property name="mqClient" ref="mqClient"/>
+		<property name="actionHelper" ref="actionHelper"/>
+	</bean>
+	
+	<bean id="gpsUnitStatusAction" 
+		class="com.brtracker.services.midlink.processing.application.GpsUnitStatusAction" 
+		parent="commonAction">	
+			<property name="deviceStateDao" ref="deviceStateDao"/>
+	</bean>
+
+	<bean id="enforaUnitStatusAction" 
+		class="com.brtracker.services.midlink.processing.application.EnforaUnitStatusAction" 
+		parent="commonAction">	
+			<property name="deviceStateDao" ref="deviceStateDao"/>
+	</bean>
+
+	<bean id="xirgoUnitStatusAction" 
+		class="com.brtracker.services.midlink.processing.application.XirgoUnitStatusAction" 
+		parent="commonAction">	
+			<property name="deviceStateDao" ref="deviceStateDao"/>
+	</bean>
+
+	<bean id="gpsTripAction" 
+		class="com.brtracker.services.midlink.processing.application.GpsTripAction" 
+		parent="commonAction"/>
+
+	<bean id="jBusTripAction" 
+		class="com.brtracker.services.midlink.processing.application.JBusTripAction" 
+		parent="commonAction"/>
+	
+	<bean id="ioServiceTripAction" 
+		class="com.brtracker.services.midlink.processing.application.IOServiceTripAction" 
+		parent="commonAction">
+		<property name="systemConfiguration" ref="systemConfiguration"/>
+	</bean>
+		
+	<bean id="ioServiceConfirmAction" 
+		class="com.brtracker.services.midlink.processing.application.IOServiceConfirmAction" 
+		parent="commonAction">
+		<property name="commandEventDao" ref="commandEventDao"/>
+	</bean>
+
+	<bean id="gpsInfoHandler" class="com.brtracker.services.midlink.processing.MessageTypeHandler">
+		<property name="actions">
+			<list>			
+				<ref bean="gpsUnitStatusAction"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="enforaHandler" class="com.brtracker.services.midlink.processing.MessageTypeHandler">
+		<property name="actions">
+			<list>			
+				<ref bean="enforaUnitStatusAction"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="xirgoHandler" class="com.brtracker.services.midlink.processing.MessageTypeHandler">
+		<property name="actions">
+			<list>			
+				<ref bean="xirgoUnitStatusAction"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="jBusHandler" class="com.brtracker.services.midlink.processing.MessageTypeHandler">
+		<property name="actions">
+			<list>
+				<ref bean="jBusTripAction"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="ioServiceHandler" class="com.brtracker.services.midlink.processing.MessageTypeHandler">
+		<property name="actions">
+			<list>
+				<ref bean="ioServiceTripAction"/>
+				<!-- 
+				<ref bean="ioServiceConfirmAction"/>
+				-->
+			</list>
+		</property>
+	</bean>
+
+	<bean id="teltonikaUnitStatusAction" 
+		class="com.brtracker.services.midlink.processing.application.TeltonikaUnitStatusAction">
+		<property name="actionHelper" ref="actionHelper"/>
+		<property name="mqClient" ref="mqClient"/>
+		<property name="systemConfiguration" ref="systemConfiguration"/> 
+	</bean>
+
+	<bean id="teltonikaTripAction" 
+		class="com.brtracker.services.midlink.processing.application.TeltonikaTripAction">
+		<property name="wsClient" ref="wsClient"/>
+		<property name="mqClient" ref="mqClient"/>
+		<property name="systemConfiguration" ref="systemConfiguration"/> 
+	</bean>
+
+	<bean id="teltonikaHandler" class="com.brtracker.services.midlink.processing.MessageTypeHandler">
+		<property name="actions">
+			<list>
+				<ref bean="teltonikaUnitStatusAction"/>
+				<ref bean="teltonikaTripAction"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="jmsSender" class="com.brtracker.shared.utils.activemq.JmsSender">
+		<property name="systemConfiguration" ref="systemConfiguration"/>
+	</bean>
+	
+	<bean id="messageAuditLogger" class="com.brtracker.services.midlink.processing.application.MessageAuditLogger">
+		<property name="jmsSender" ref="jmsSender"/>
+	</bean>
+	
+	<bean id="packetDispatcher" class="com.brtracker.services.midlink.processing.PacketDispatcher">
+		<property name="messageTypeHandlers">
+			<map>
+				<entry key="PicoloGpsInfoMessage" value-ref="gpsInfoHandler"/>
+				<entry key="PicoloJBusMessage" value-ref="jBusHandler"/>
+				<entry key="PicoloIOServiceMessage" value-ref="ioServiceHandler"/>
+				<entry key="TeltonikaAVLMessage" value-ref="teltonikaHandler"/>
+				<entry key="EnforaMT3000Message" value-ref="enforaHandler"/>
+				<entry key="XirgoMessage" value-ref="xirgoHandler"/>
+			</map>
+		</property>
+		<property name="readerController" ref="packetReader"/>
+		<property name="messageAuditLogger" ref="messageAuditLogger"/>
+	</bean>
+
+	<bean id="restfulMessageHandler" class="com.brtracker.services.midlink.processing.RestfulMessageHandler">
+		<property name="deviceStateDao" ref="deviceStateDao"/>
+		<property name="actionHelper" ref="actionHelper"/>
+		<property name="mqClient" ref="mqClient"/>
+	</bean>
+
+	<bean id="restfulMessageDispatcher" class="com.brtracker.services.midlink.processing.RestfulMessageDispatcher">
+		<property name="messageAuditLogger" ref="messageAuditLogger"/>
+		<property name="mqClient" ref="mqClient"/>
+		<property name="deviceTypeHandlers">
+			<map>
+				<entry key="SMARTPHONE" value-ref="restfulMessageHandler"/>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="messageListener" class="com.brtracker.services.midlink.processing.PacketListener">
+		<property name="dispatcher" ref="packetDispatcher"/>
+		<property name="restfulMessageDispatcher" ref="restfulMessageDispatcher"/>
+	</bean>
+	
+	<bean id="deviceEventListener" class="com.brtracker.services.midlink.processing.DeviceEventListener">
+		<property name="deviceStateDao" ref="deviceStateDao"/>
+		<property name="mqClient" ref="mqClient"/>
+	</bean>
+	
+	<bean id="messagingBootstrapper" class="com.brtracker.services.midlink.processing.MessagingBootstrapper">
+		<property name="packetListener" ref="messageListener"/>
+		<property name="deviceEventListener" ref="deviceEventListener"/>
+		<property name="jmsSender" ref="jmsSender"/>
+	</bean>
+
+	<bean id="midlinkJobStarter" class="com.brtracker.services.midlink.processing.MidlinkJobStarter">
+		<property name="systemConfiguration" ref="systemConfiguration"/>
+		<property name="midlinkJobDetail" ref="notificationJobDetail"/>
+		<property name="commandRetryJobDetail" ref="commandRetryJobDetail"/>
+				
+	</bean>
+
+	<bean id="staleDeviceMonitor" class="com.brtracker.services.midlink.processing.StaleDeviceMonitor">
+		<property name="deviceStateDao" ref="deviceStateDao" />
+		<property name="actions">
+			<map>
+				<entry key="PicoloGpsInfoMessage" value-ref="gpsUnitStatusAction"/>
+				<entry key="TeltonikaAVLMessage" value-ref="teltonikaUnitStatusAction"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="notificationJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	  <property name="targetObject" ref="staleDeviceMonitor" />
+	  <property name="targetMethod" value="monitorStaleDevices" />
+	  <property name="name" value="stale_device_monitor_job"/>
+	  <property name="group" value="stale_device_monitor_group"/>
+	</bean>
+
+	<bean id="commandRetryMonitor" class="com.brtracker.services.midlink.processing.command.CommandRetryMonitor">
+		<property name="commandEventDao" ref="commandEventDao"/>
+		<property name="commands">
+			<map>
+				<entry key="WILUS_PICCOLO_STX" value-ref="picoloCommandHandler"/>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="commandRetryJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	  <property name="targetObject" ref="commandRetryMonitor" />
+	  <property name="targetMethod" value="handleCommandRetry" />
+	  <property name="name" value="command_retry_monitor_job"/>
+	  <property name="group" value="command_retry_monitor_group"/>
+	</bean>
+
+    <bean class="org.apache.wink.spring.Registrar">
+	  <property name="instances">
+	    <set>
+	      <ref bean="deviceCommandWsApi" />
+	    </set>
+	  </property>
+	</bean>
+	
+	<bean id="commandValidator" class="com.brtracker.services.midlink.processing.command.CommandValidator">
+		<property name="commandTemplateDao" ref="commandTemplateDao"/>
+	</bean>
+
+	<bean id="commandDispatcher" class="com.brtracker.services.midlink.processing.command.CommandDispatcherImpl">
+		<property name="commandTemplateDao" ref="commandTemplateDao"/>	
+		<property name="commands">
+			<map>
+				<entry key="WILUS_PICCOLO_STX" value-ref="picoloCommandHandler"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="picoloCommandHandler" class="com.brtracker.services.midlink.processing.command.PicoloStxCommand">
+		<property name="commandEventDao" ref="commandEventDao"/>
+		<property name="systemConfiguration" ref="systemConfiguration"/>
+		<property name="wsClient" ref="wsClient"/>
+	</bean>
+	
+	<bean id="commandService" class="com.brtracker.services.midlink.processing.command.CommandService">
+		<property name="commandEventDao" ref="commandEventDao"/>
+		<property name="commandTemplateDao" ref="commandTemplateDao"/>
+		<property name="commandDispatcher" ref="commandDispatcher"/>
+		<property name="commandValidator" ref="commandValidator"/>
+		<property name="commandIOConfigDao" ref="commandIOConfigDao"/>
+	</bean>
+	
+	<bean id="deviceCommandWsApi" class="com.brtracker.services.midlink.endpoint.DeviceCommandWsApi">
+		<property name="commandService" ref="commandService"/>
+	</bean>
+		
+ </beans>

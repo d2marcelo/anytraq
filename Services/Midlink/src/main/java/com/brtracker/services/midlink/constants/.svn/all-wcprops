@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/anytraq/anytraq/!svn/ver/633/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants
+END
+GPSFieldType.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/341/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants/GPSFieldType.java
+END
+PacketCommunicationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/anytraq/anytraq/!svn/ver/326/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants/PacketCommunicationType.java
+END
+JBusReportType.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/610/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants/JBusReportType.java
+END
+JBusTripState.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/610/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants/JBusTripState.java
+END
+JBusFieldType.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/633/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants/JBusFieldType.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/343/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants/Constants.java
+END
+IOStateFieldType.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/633/trunk/Services/Midlink/src/main/java/com/brtracker/services/midlink/constants/IOStateFieldType.java
+END

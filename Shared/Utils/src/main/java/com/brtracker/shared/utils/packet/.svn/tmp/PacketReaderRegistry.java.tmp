@@ -1,0 +1,417 @@
+package com.brtracker.shared.utils.packet;
+
+import static com.brtracker.shared.utils.packet.PacketDefinitionConstants.*;
+import java.util.HashMap;
+import java.util.Map;
+
+public class PacketReaderRegistry {
+	private Map<String, PacketElementReader> primitiveTypeReaders;
+	
+	public PacketReaderRegistry() {
+		primitiveTypeReaders = new HashMap<String, PacketElementReader>();
+		loadPrimitiveTypes();
+	}
+	
+	private void loadPrimitiveTypes() {
+		
+		primitiveTypeReaders.put(STRING_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				
+				String element = parseElement(context, e);
+				return element;
+			}
+		});
+
+		primitiveTypeReaders.put(BIN_INT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				Integer length = PacketReaderUtils.getOptionalIntegerVal(e, LENGTH_P);
+				Integer factor = PacketReaderUtils.getOptionalIntegerVal(e, MULTIPLY_P, Integer.valueOf(1));
+				if (length == null) {
+					length = 1;
+				}
+				int value = 0;
+				for (int i=0; i<length; i++) {
+					value = value << 8 | (context.readInt() & 0xff);
+				}
+				return value * factor;
+			}
+		});
+		
+		primitiveTypeReaders.put(BIN_LONG_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				Integer length = PacketReaderUtils.getOptionalIntegerVal(e, LENGTH_P);
+				Integer factor = PacketReaderUtils.getOptionalIntegerVal(e, MULTIPLY_P, Integer.valueOf(1));
+				if (length == null) {
+					length = 1;
+				}
+				long value = 0;
+				for (int i=0; i<length; i++) {
+					value = value << 8 | (context.readInt() & 0xff);
+				}
+				return value*factor;
+			}
+		});
+
+		primitiveTypeReaders.put(BIN_FLOAT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				Integer length = PacketReaderUtils.getOptionalIntegerVal(e, LENGTH_P);
+				Float factor = PacketReaderUtils.getOptionalFloatVal(e, MULTIPLY_P, Float.valueOf(1.0F));
+				if (length == null) {
+					length = 1;
+				}
+				int value = 0;
+				for (int i=0; i<length; i++) {
+					value = value << 8 | (context.readInt() & 0xff);
+				}
+				return Float.valueOf(value*factor);
+			}
+		});
+
+		primitiveTypeReaders.put(NEG_SENSE_INT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				String element = parseElement(context, e);
+				int value = Integer.valueOf(element);
+				// OFF
+				if (value > 0) {
+					return Integer.valueOf(0);
+				// ON
+				} else {
+					return Integer.valueOf(1);
+				}
+			}
+		});
+
+		primitiveTypeReaders.put(POS_SENSE_INT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				String element = parseElement(context, e);
+				int value = Integer.valueOf(element);
+				// ON
+				if (value > 0) {
+					return Integer.valueOf(1);
+				// OFF
+				} else {
+					return Integer.valueOf(0);
+				}
+			}
+		});
+		
+		primitiveTypeReaders.put(INT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+
+				String element = parseElement(context, e);
+				
+				Integer factor = PacketReaderUtils.getOptionalIntegerVal(e, MULTIPLY_P, Integer.valueOf(1));
+				Integer addFactor = PacketReaderUtils.getOptionalIntegerVal(e, ADD_P, Integer.valueOf(0));
+				Boolean addItems = PacketReaderUtils.getOptionalBooleanVal(e, ADD_ITEMS_P, Boolean.FALSE);
+				
+				Boolean tokenized = PacketReaderUtils.getOptionalBooleanVal(e, TOKENIZED_P);
+				if (tokenized != null) {
+				
+					String tokenDelim = e.get(DELIM_P) == null ? "," : (String) e.get(DELIM_P);
+					String[] data = element.split(tokenDelim);
+					Integer[] numericArray = new Integer[data.length];
+					for (int i=0; i<data.length; i++) {
+						numericArray[i] = Integer.valueOf(data[i]) * factor + addFactor;
+					}
+					
+					if (addItems) {
+						Integer total = 0;
+						for (Integer a : numericArray) {
+							total += a;
+						}
+						return total;
+					} else {
+						return numericArray;
+					}
+					
+				} else {
+					
+					return Integer.valueOf(element.toString());
+				}
+			}
+		});
+		primitiveTypeReaders.put(DOUBLE_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				
+				String element = parseElement(context, e);
+				
+				Double factor = PacketReaderUtils.getOptionalDoubleVal(e, MULTIPLY_P, Double.valueOf(1.0));
+				Double addFactor = PacketReaderUtils.getOptionalDoubleVal(e, ADD_P, Double.valueOf(0.0));
+				Boolean addItems = PacketReaderUtils.getOptionalBooleanVal(e, ADD_ITEMS_P, Boolean.FALSE);
+				
+				Boolean tokenized = PacketReaderUtils.getOptionalBooleanVal(e, TOKENIZED_P);
+				if (tokenized != null) {
+				
+					String tokenDelim = e.get(DELIM_P) == null ? "," : (String) e.get(DELIM_P);
+					String[] data = element.split(tokenDelim);
+					Double[] numericArray = new Double[data.length];
+					for (int i=0; i<data.length; i++) {
+						numericArray[i] = Double.valueOf(data[i]) * factor + addFactor;
+					}
+					
+					if (addItems) {
+						Double total = 0.0;
+						for (Double a : numericArray) {
+							total += a;
+						}
+						return total;
+					} else {
+						return numericArray;
+					}
+
+				} else {
+					
+					return Double.valueOf(element.toString());
+				}
+			}
+		});
+		
+		primitiveTypeReaders.put(FLOAT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				
+				String element = parseElement(context, e);
+				
+				Float factor = PacketReaderUtils.getOptionalFloatVal(e, MULTIPLY_P, Float.valueOf(1.0f));
+				Float addFactor = PacketReaderUtils.getOptionalFloatVal(e, ADD_P, Float.valueOf(0.0f));
+				Boolean addItems = PacketReaderUtils.getOptionalBooleanVal(e, ADD_ITEMS_P, Boolean.FALSE);
+				
+				Boolean tokenized = PacketReaderUtils.getOptionalBooleanVal(e, TOKENIZED_P);
+				if (tokenized != null) {
+				
+					String tokenDelim = e.get(DELIM_P) == null ? "," : (String) e.get(DELIM_P);
+					String[] data = element.split(tokenDelim);
+					Float[] numericArray = new Float[data.length];
+					for (int i=0; i<data.length; i++) {
+						numericArray[i] = Float.valueOf(data[i]) * factor + addFactor;
+					}
+					
+					if (addItems) {
+						Float total = 0.0F;
+						for (Float a : numericArray) {
+							total += a;
+						}
+						return total;
+					} else {
+						return numericArray;
+					}
+
+					
+				} else {
+					
+					return Float.valueOf(element.toString());
+				}
+			}
+		});
+
+		primitiveTypeReaders.put(USHORT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				// TODO verify ushort are always 2 integers long
+				int a = context.readInt();
+				int b = context.readInt();
+				return Integer.valueOf((a<<8) + b);
+			}
+		});
+		primitiveTypeReaders.put(PICOLO_GPS_NMEA_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				throw new RuntimeException(PICOLO_GPS_NMEA_TYPE + " type, not supported");
+			}
+		});
+		primitiveTypeReaders.put(PICOLO_GPS_EXT_BIN_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				
+				if(context.readInt() != 0xff) {
+					throw new InvalidPacketException(PICOLO_GPS_EXT_BIN_TYPE + " packet is not a binary", context);
+				}
+				int fieldLen = context.readInt()*256 + context.readInt();
+				
+				if (fieldLen != 16) {
+					throw new InvalidPacketException(PICOLO_GPS_EXT_BIN_TYPE + " packet has invalid length", context);
+				}
+				
+           		// latitude/longitude, The value represents 1/10000 of minutes, values greater than 0 represent 
+           		// the North(latitude)/West(longitude) hemisphere, and values less than 0 represent the South(latitude)/West(longitude) hemisphere. 
+           		// To convert to degrees, divide the value by 600000
+        		float latitude = ((float)((context.readInt()<<24) + (context.readInt()<<16) + (context.readInt()<<8) + context.readInt()))/600000;
+
+        		float longitude = ((float)((context.readInt()<<24) + (context.readInt()<<16) + (context.readInt()<<8) + context.readInt()))/600000;
+
+        		// Speed over Ground, the value is 0.1 knots, so divide by 10 to get it by knots
+        		// To convert to MPH: divide by 1.151
+        		// To convert to KPH: divide by 1.852
+        		float speed = ((context.readInt()<<8) + context.readInt())/10;
+
+        		int b10 = context.readInt();
+        		
+        		// Get date & time of GPS message
+           		int minutsInDay = ((b10 & 0x3)<<8) + context.readInt();
+        		int minutes = minutsInDay%60;
+        		int hours = minutsInDay/60;
+        		int dayOfMonth = ((b10 & 0xF8)>>3);
+        		
+        		int b12 = context.readInt();
+        		int year = 2000 + ((b12 & 0xF0)>>4);
+        		int month = (b12 & 0x0F);
+        		String time = + month + "/" + dayOfMonth + "/" + year + " " + hours + ":"+ minutes + ":" + context.readInt();
+
+        		float course = ((float)(context.readInt()<<8) + context.readInt())/10;
+        		
+        		Map<String, Object> gpsInfo = new HashMap<String, Object>();
+        		gpsInfo.put("latitude", latitude);
+        		gpsInfo.put("longitude", longitude);
+        		gpsInfo.put("speed", speed);
+        		gpsInfo.put("time", time);
+        		gpsInfo.put("course", course);
+        		
+				return gpsInfo;
+			}
+		});
+		primitiveTypeReaders.put(TIME32_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				
+				String element = parseElement(context, e);
+				long time_t = Long.parseLong(element);
+        		return Long.valueOf(time_t*1000);
+			}
+		});
+		primitiveTypeReaders.put(PW_REPORT_TYPE,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				
+				String element = parseElement(context, e);
+        		String powerArray[] = element.split(",");
+        		Map<String, Object> powerReport = new HashMap<String, Object>();
+        		
+        		if(powerArray.length < 4) {
+        			return powerReport; 
+        		}
+        		
+        		int unitType = Integer.parseInt(powerArray[0]);
+        		if(unitType > 3) {
+        			return powerReport;
+        		}
+        		int extPowerState = Integer.parseInt(powerArray[1]);
+        		// EPV - external power voltage, in 0.01V, divide by 100 for Volts
+        		float epv = ((float)Integer.parseInt(powerArray[2]))/100;
+        		// BV - internal battery voltage, in 0.01V, divide by 100 for Volts
+        		float bv = ((float)Integer.parseInt(powerArray[3]))/100;
+        		
+        		powerReport.put("unitType",unitType);
+        		powerReport.put("extPowerState",extPowerState);
+        		powerReport.put("epv",epv);
+        		powerReport.put("bv",bv);
+        		
+        		return powerReport;
+			}
+		});
+		primitiveTypeReaders.put(DROP_UNTIL_P,
+				new PacketElementReader() {
+			@Override
+			public Object readPacketElement(PacketReaderContext context,
+					Map<String, ?> e) {
+				Integer delimiter = PacketReaderUtils.getOptionalIntegerVal(e, VALUE_P);
+				int c;
+				try {
+					do {
+			        	c = context.readInt();
+			        } while(c != delimiter);
+				} catch (PacketReadOutOfBoundary ex) {
+					c = -1;
+				}
+				return Integer.valueOf(c);
+			}
+		});
+	}
+
+	private String parseElement(PacketReaderContext context, Map<String, ?> e) {
+		
+		Integer fieldDelimiter = PacketReaderUtils.getOptionalIntegerVal(e, FIELD_DELIM_P);
+		Integer maxLength = PacketReaderUtils.getOptionalIntegerVal(e, MAX_LENGTH_P);
+		if (maxLength == null) {
+			maxLength = Integer.MAX_VALUE;
+		}
+		
+		StringBuilder sb = new StringBuilder();
+		if (fieldDelimiter != null) {
+			char c = (char) context.readInt();
+			int i = 0;
+			while (c != fieldDelimiter && i < maxLength) {
+				sb.append(c);
+				c = (char) context.readInt();
+				i++;
+			}
+			context.setFieldDelimiterReached(true);
+		} else {
+			Integer length = PacketReaderUtils.getOptionalIntegerVal(e, LENGTH_P);
+			if (length != null) {
+				int l = 0;
+				while (l<length) {
+					sb.append((char)context.readInt());
+					l++;
+				}
+			} 
+		}
+		return sb.toString();
+	}
+
+	public boolean isPrimitive(String type) {
+		return primitiveTypeReaders.containsKey(type);
+	}
+	
+	public Object readPrimitiveElement(PacketReaderContext context, Map<String,?> e) {
+		
+		String type = (String) e.get(TYPE_P);
+		
+		PacketElementReader packetElementReader = primitiveTypeReaders.get(type);
+		if (packetElementReader != null) {
+			return packetElementReader.readPacketElement(context, e);
+		} else {
+			return null;
+		}
+	}
+
+	public void setPrimitiveTypeReaders(
+			Map<String, PacketElementReader> primitiveTypeReaders) {
+		this.primitiveTypeReaders = primitiveTypeReaders;
+	}
+}

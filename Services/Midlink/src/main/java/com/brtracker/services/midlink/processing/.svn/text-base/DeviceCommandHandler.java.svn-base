@@ -1,0 +1,7 @@
+package com.brtracker.services.midlink.processing;
+
+public interface DeviceCommand {
+	public void sendCommand(CommandTemplateEntity template, String deviceId);
+	public void resendCommand(CommandEventEntity event);
+	public void verifyCommand(CommandEventEntity event);
+}

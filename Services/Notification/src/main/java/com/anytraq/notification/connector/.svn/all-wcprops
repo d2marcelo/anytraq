@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/anytraq/anytraq/!svn/ver/1980/trunk/Services/Notification/src/main/java/com/anytraq/notification/connector
+END
+NotificationConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/java/com/anytraq/notification/connector/NotificationConnector.java
+END
+TwilioSmsConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/1980/trunk/Services/Notification/src/main/java/com/anytraq/notification/connector/TwilioSmsConnector.java
+END
+NotificationConnectorManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/anytraq/anytraq/!svn/ver/1927/trunk/Services/Notification/src/main/java/com/anytraq/notification/connector/NotificationConnectorManager.java
+END
+AwsEmailConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/2359/trunk/Services/Notification/src/main/java/com/anytraq/notification/connector/AwsEmailConnector.java
+END

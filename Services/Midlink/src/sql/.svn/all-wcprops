@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/anytraq/anytraq/!svn/ver/2068/trunk/Services/Midlink/src/sql
+END
+midlink.schema.001.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anytraq/anytraq/!svn/ver/3050/trunk/Services/Midlink/src/sql/midlink.schema.001.sql
+END
+midlink.seed.data.001.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/anytraq/anytraq/!svn/ver/3573/trunk/Services/Midlink/src/sql/midlink.seed.data.001.sql
+END

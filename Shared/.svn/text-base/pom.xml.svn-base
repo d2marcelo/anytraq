@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.brtracker</groupId>
+		<artifactId>BRTracker</artifactId>
+		<version>trunk-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<name>BRTRACKER::SHARED</name>
+	<groupId>com.brtracker.shared</groupId>
+	<artifactId>Shared</artifactId>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>Utils</module>
+		<module>Payload</module>
+		<module>Caching</module>
+	</modules>
+
+	<properties></properties>
+	<dependencyManagement></dependencyManagement>
+	<profiles></profiles>
+	<repositories></repositories>
+
+</project>
+

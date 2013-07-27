@@ -1,0 +1,6 @@
+com.brtracker.services.tracking.endpoint.VehicleService
+com.brtracker.services.tracking.endpoint.GraphDataService
+com.brtracker.services.tracking.endpoint.DeviceMessageService
+com.brtracker.services.tracking.endpoint.DriverBehaviorService
+com.brtracker.services.tracking.endpoint.AlertMessageService
+com.brtracker.services.tracking.endpoint.DeviceHistoryService

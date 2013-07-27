@@ -1,0 +1,84 @@
+package com.brtracker.shared.utils.packet;
+
+public class PacketDefinitionConstants {
+
+	public static final String COMMON_SCHEMA_NS = "tracking.common";
+	
+	public static final String SCHEMA_NS = "schema_ns";
+	public static final String MESSAGE_ROOT = "message_root";
+	public static final String UNIT_ID = "unitId";
+	public static final String MESSAGE_DATE = "messageDate";
+	
+	public static final String KEY_LENGTH_P = "key_length";
+	public static final String KEY_TYPE_P = "key_type";
+	public static final String FIELD_LENGTH_P = "field_length";
+	public static final String FIELD_VALUE_P = "field_value";
+	public static final String TYPE_P = "type";
+	public static final String ITEM_TYPE_P = "item_type";
+	public static final String SELECTOR_P = "selector";
+	public static final String SELECTOR2_P = "selector2";
+	public static final String ARRAY_P = "array";
+	public static final String DYN_LENGTH_FIELD_P = "dynamic_length_field";
+	public static final String DIRECT_ACCESS_P = "direct_access_field";
+	public static final String LENGTH_P = "length";
+	public static final String OFFSET_P = "offset";
+	public static final String ITEM_P = "item";
+	public static final String MAPPING_P = "mapping";
+	public static final String FIELD_SET_P = "keyed_field_set";
+	public static final String TOKENIZED_FIELD_SET_P = "tokenized_field_set";
+	public static final String FIELDS_P = "fields";
+	public static final String FIELD_DELIM_P = "field_delim";
+	public static final String MAX_LENGTH_P = "max_length";
+	public static final String FIELD_KEY_P = "field_key";
+	public static final String DELIM_P = "delim";
+	public static final String PRE_PROCESSOR_P = "preprocessor";
+	public static final String DROP_UNTIL_P = "drop_until";
+	public static final String VALUE_P = "value";
+	public static final String MULTIPLY_P = "multiply";
+	public static final String MULTIPLY_RULE_P = "multiply_rule";
+	public static final String MULTIPLY_SPEED_P = "multiply_speed";
+	public static final String ADD_P = "add";
+	public static final String ADD_ITEMS_P = "add_items";
+	public static final String TOKENIZED_P = "tokenized";
+	public static final String STORE_P = "store";
+	public static final String PROPERTY_P = "property";
+	public static final String PROPERTY_ID_P = "property_id";
+	public static final String PROPERTY_VALUE_P = "property_value";
+	public static final String PROPERTY_NAME_SELECTOR_P = "property_name_selector";
+	public static final String PROPERTY_VALUE_SELECTOR_P = "property_value_selector";
+	public static final String MESSAGE_NAME_P = "message_name";
+	public static final String OPTIONAL_P = "optional";
+	public static final String UNIT_ID_P = "unit_identifier_propery";
+	public static final String SCHEMA_PORT_MAPPING_P = "shema_port_mapping";
+	
+	public static final String STRING_TYPE = "string";
+	public static final String INT_TYPE = "int";
+	public static final String NEG_SENSE_INT_TYPE = "neg_sense_int";
+	public static final String POS_SENSE_INT_TYPE = "pos_sense_int";
+	public static final String BIN_INT_TYPE = "binary_int";
+	public static final String BIN_FLOAT_TYPE = "binary_float";
+	public static final String BIN_LONG_TYPE = "binary_long";
+	public static final String USHORT_TYPE = "ushort";
+	public static final String FLOAT_TYPE = "float";
+	public static final String DOUBLE_TYPE = "double";
+	public static final String PICOLO_GPS_NMEA_TYPE = "picolo_gps_nmea_data";
+	public static final String PICOLO_GPS_EXT_BIN_TYPE = "picolo_gps_ext_bin_data";
+	public static final String TIME32_TYPE = "time32";
+	public static final String PW_REPORT_TYPE = "picolo_pw_report";
+	
+	public static final String FLOAT_NMEA_LAT = "nmea_lat";
+	public static final String FLOAT_NMEA_LNG = "nmea_lng";
+	
+	public static final int MAX_WLI_PCK_SIZE = 1500;
+	public static final int STX_START_WLI_PCK = 0x02;
+	public static final int ETX_END_WLI_PCK = 0x03;
+	public static final int APP_CLASS = 0x31;
+	
+	static final int GPS_REQUEST_MSG_LEN = 6;
+
+	public static final int ESCAPE_HDR = 0xDB;
+	public static final int ESCAPE_STX =0xD2;
+	public static final int ESCAPE_ETX =0xD3;
+	public static final int ESCAPE_DB =0xDD;
+
+}

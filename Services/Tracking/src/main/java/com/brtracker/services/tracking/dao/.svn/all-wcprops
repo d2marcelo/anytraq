@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/anytraq/anytraq/!svn/ver/2309/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao
+END
+ReportingDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/anytraq/anytraq/!svn/ver/529/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/ReportingDAOImpl.java
+END
+LookupDAOCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/anytraq/anytraq/!svn/ver/1512/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/LookupDAOCriteria.java
+END
+DriverBehaviorDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/1408/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/DriverBehaviorDAOImpl.java
+END
+GraphDataDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/1815/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/GraphDataDAOImpl.java
+END
+AlertMessageDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/anytraq/anytraq/!svn/ver/2083/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/AlertMessageDAOImpl.java
+END
+ResultDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/anytraq/anytraq/!svn/ver/529/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/ResultDAOImpl.java
+END
+AbstractReportDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/anytraq/anytraq/!svn/ver/1815/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/AbstractReportDAOImpl.java
+END
+ResultDAOCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/anytraq/anytraq/!svn/ver/529/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/ResultDAOCriteria.java
+END
+VehicleDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/anytraq/anytraq/!svn/ver/848/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/VehicleDAOImpl.java
+END
+TrackingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/anytraq/anytraq/!svn/ver/713/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/TrackingDAO.java
+END
+DeviceHistoryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/2309/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/DeviceHistoryDAOImpl.java
+END
+TrackingDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/anytraq/anytraq/!svn/ver/713/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/TrackingDAOImpl.java
+END
+AbstractResultDAOCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/anytraq/anytraq/!svn/ver/1815/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/AbstractResultDAOCriteria.java
+END
+DeviceMessageDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/anytraq/anytraq/!svn/ver/1351/trunk/Services/Tracking/src/main/java/com/brtracker/services/tracking/dao/DeviceMessageDAOImpl.java
+END

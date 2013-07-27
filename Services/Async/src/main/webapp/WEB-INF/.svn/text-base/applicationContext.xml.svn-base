@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "jar:spring-2.0.6.jar:org/springframework/beans/factory/xml/spring-beans.dtd">
+
+<beans>
+
+	<import resource="classpath:spring/system-resources.xml" />
+	<import resource="classpath:spring/async-datasource.xml"/>
+	<import resource="classpath:spring/async-dao.xml"/>
+	<import resource="classpath:spring/amq-beans.xml"/>
+	<import resource="classpath:spring/async-beans.xml"/>
+	
+	
+</beans>
